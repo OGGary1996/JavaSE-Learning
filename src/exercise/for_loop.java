@@ -32,14 +32,15 @@ public class for_loop {
 		int sum_of_even = 0;
 		for (int i = 1 ; i <= 100 ; i++) {
 			if (i % 2 == 0) {
-				sum += i;
+				sum_of_even += i;
 			}
 		}
 		System.out.print("The sum of all even number is "+sum_of_even);
+		System.out.println();
 		
 		//no.2
 		int num_a = 0 , num_b = 1;
-		System.out.println("The Fibonacci numbers are: "+num_a + " , " + num_b);
+		System.out.print("The Fibonacci numbers are: "+num_a + " , " + num_b);
 		for (int i = 1 ; i <= 18 ; i++ ) {
 			int num_c = num_a + num_b;
 			System.out.print(num_c+" , ");	
