@@ -4,57 +4,56 @@ public class for_loop {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		// exercise 1
-		int marks = 86;
-		if (marks >= 90) {
-			System.out.println("A Grade!");
+		// for loop
+		for(int i = 1 ; i <= 10 ; i ++) {
+			System.out.println(i);
 		}
-		if (marks < 90 && marks >= 75) {
-			System.out.println("B Grade!");
+		for (int i = 10 ; i >= 1 ; i -=2 ) {
+			System.out.println(i);
 		}
-		if (marks < 75 && marks >= 60) {
-			System.out.println("C Grade!");
+		//exercise1 
+		int sum = 0;
+		for (int i = 1 ; i <= 10 ; i++) {
+			sum = sum + i;
 		}
-		if (marks < 60 && marks >=40) {
-			System.out.println("D Grade!");
-		}
-		if (marks < 40) {
-			System.out.println("F Grade!");
-		}
-		//exercise 2
-		int marks2 = 36;
-		if (marks2 >= 90) {
-			System.out.println("A Grade!");
-		}
-		else if (marks2 >= 75) {
-			System.out.println("B Grade!");
-		}
-		else if (marks2 >= 60) {
-			System.out.println("C Grade!");
-		}
-		else if (marks2 >=40) {
-			System.out.println("D Grade!");
-		}
-		else {
-			System.out.println("sorry, you did not pass.");
-		}
-		// assignment 1
-		int num1 = 100, num2 = 400, num3 = 200;
-		if (num1 > num2) {
-			if (num1 > num3) {
-				System.out.println("The biggest number is " + num1);
+		System.out.println("sum = "+sum);
+		
+		
+		// nested for loop
+		for (int i = 1 ; i <= 10 ; i ++) {
+			for (int j = 1 ; j <= 5 ; j++ ){
+				System.out.println(j);
 			}
-			else {
-				System.out.println("The biggest number is " + num3);
+			System.out.println("All ieration of j are done for "+i+" ieration of i");
+		}
+		
+		// assignment 3
+		//no.1 
+		int sum_of_even = 0;
+		for (int i = 1 ; i <= 100 ; i++) {
+			if (i % 2 == 0) {
+				sum += i;
 			}
 		}
-		else {
-			if (num2 > num3) {
-				System.out.println("The biggest number is " + num2);
+		System.out.print("The sum of all even number is "+sum_of_even);
+		
+		//no.2
+		int num_a = 0 , num_b = 1;
+		System.out.println("The Fibonacci numbers are: "+num_a + " , " + num_b);
+		for (int i = 1 ; i <= 18 ; i++ ) {
+			int num_c = num_a + num_b;
+			System.out.print(num_c+" , ");	
+			num_a = num_b;
+			num_b = num_c;
+		}
+		
+		// no.3
+		System.out.println();
+		for (int x = 1 ; x <= 6; x++) {
+			for (int y = 1 ; y <= (x+1) ; y++) {
+				System.out.print("*");
 			}
-			else {
-				System.out.println("The biggest number is " + num3);
-			}
+			System.out.println();
 		}
 	}
 
