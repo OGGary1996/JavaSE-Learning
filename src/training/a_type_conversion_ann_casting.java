@@ -1,6 +1,6 @@
 package training;
 
-public class type_conversion_ann_casting {
+public class a_type_conversion_ann_casting {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

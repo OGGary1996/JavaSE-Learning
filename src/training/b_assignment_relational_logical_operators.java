@@ -1,6 +1,6 @@
 package training;
 
-public class assignment_relational_logical_operators {
+public class b_assignment_relational_logical_operators {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

@@ -1,6 +1,6 @@
 package exercise;
 
-public class String_operation {
+public class c_String_operation {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

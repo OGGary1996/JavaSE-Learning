@@ -1,6 +1,6 @@
 package training;
 
-public class condition_statements {
+public class c_condition_statements {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
