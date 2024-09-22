@@ -6,17 +6,17 @@ public class f_class_object {
 		// TODO Auto-generated method stub
 		// 调用 car
 		car my_car = new car(2016,"subaru");
-		my_car.print_car_info();
+		my_car.printinfo();
 		
 		// 调用person
-		person my_info = new person("ke",28);
-		my_info.personal_info();
+		person my_info = new person("ke", 28 ,'M');
+		my_info.print_info();
 		
 		// 调用calculator
-		calculator test = new calculator();
-		int result = test.add(6, 10);
-		System.out.println(result);
-		
+		calculator text1 = new calculator();
+		System.out.println(text1.add(3, 5));
+		calculator text2 = new calculator();
+		System.out.println(text2.time(3, 5));
 	}
 
 }

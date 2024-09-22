@@ -1,15 +1,17 @@
 package training;
 
-public class person {
+public class person{
 	String name;
 	int age;
+	char gender;
 	
-	person(String name , int age ) {
+	person(String name, int age, char gender){
 		this.name = name;
 		this.age = age;
+		this.gender = gender;
 	}
-	public void personal_info() {
-		System.out.println("name is " + this.name + ", age is " + this.age + " .");
+	
+	public void print_info() {
+		System.out.println("Name is: "+ this.name + " , age is : " + this.age +  " , gender is: " + gender);
 	}
-
 }
