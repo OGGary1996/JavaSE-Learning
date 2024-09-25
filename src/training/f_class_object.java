@@ -9,14 +9,12 @@ public class f_class_object {
 		my_car.printinfo();
 		
 		// 调用person
-		person my_info = new person("ke", 28 ,'M');
+		person my_info = new person("ke",28,"Male");
 		my_info.print_info();
 		
 		// 调用calculator
-		calculator text1 = new calculator();
-		System.out.println(text1.add(3, 5));
-		calculator text2 = new calculator();
-		System.out.println(text2.time(3, 5));
+		calculator add1 = new calculator();
+		System.out.println(add1.add(3, 5));
 	}
 
 }
