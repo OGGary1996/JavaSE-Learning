@@ -42,6 +42,11 @@ public class h_array_of_objects {
 		for (int i = 0 ; i < Students.length; i++) {
 			Students[i].print_info();
 		}
+		
+		for (Students_info Stu : Students) {
+			Stu.print_info();
+		}
+
 		// 调用person_info
 		person_info xiaoxuanfeng[] = new person_info[3];
 		xiaoxuanfeng[0] = new person_info("zhangke",28,'M');
@@ -51,12 +56,20 @@ public class h_array_of_objects {
 			xiaoxuanfeng[i].print_info();
 		}
 		
+		for (person_info persons:xiaoxuanfeng) {
+			persons.print_info();
+		}
+		
 		// 调用之前创建的class-car_info
 		car_info cars[] = new car_info[2];
 		cars[0] = new car_info(2016,"Subaru");
 		cars[1] = new car_info(2019,"Audi");
 		for (int i = 0 ; i < cars.length ; i++) {
 			cars[i].print_info();
+		}
+		
+		for (car_info mycars : cars) {
+			mycars.print_info();
 		}
 	}
 
