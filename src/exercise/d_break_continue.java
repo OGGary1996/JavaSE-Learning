@@ -3,7 +3,7 @@ package exercise;
 public class d_break_continue {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
 		// break and continue
 		// break 在循环语句中 break会立刻停止所有循环。
 		// break在后面
@@ -45,7 +45,7 @@ public class d_break_continue {
 		{
 			if (j == 6)
 			{
-				continue;  // continue 不会执行continue之后的printA语句，直接进入下一次循环。
+				continue;  // continue 不会执行continue之后的print j和print A语句，直接进入下一次循环。
 			}
 			System.out.println("j = " + j);
 			System.out.println("A"); 

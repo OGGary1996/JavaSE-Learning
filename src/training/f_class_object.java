@@ -34,7 +34,7 @@ class car_info{
 public class f_class_object {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
 		// 调用calculator
 		calculators addnums = new calculators();
 		System.out.println(addnums.add(3,5));

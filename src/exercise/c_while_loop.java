@@ -3,7 +3,7 @@ package exercise;
 public class c_while_loop {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
 		//while loop
 		
 		int i = 0;

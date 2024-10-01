@@ -3,7 +3,7 @@ package exercise;
 public class a_if_else_if_else_if {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
 		// exercise 1
 		int marks = 86;
 		if (marks >= 90) {

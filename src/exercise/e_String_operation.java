@@ -3,7 +3,7 @@ package exercise;
 public class e_String_operation {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		// + or .concat() 方法
 		String str1 = "hello";
 		String str2 = "world";
