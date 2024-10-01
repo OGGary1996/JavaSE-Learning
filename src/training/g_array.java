@@ -3,7 +3,7 @@ package training;
 public class g_array {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
 		// Array 数组 长度固定 同类型元素 基于index访问和修改
 		// array中只能存储同一种数据类型
 		

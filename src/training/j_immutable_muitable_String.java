@@ -3,7 +3,6 @@ package training;
 public class j_immutable_muitable_String {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		// Immutable, String 不可变，对于String的修改实际上是创建了一个新的Object String
 		
 		// 通过直接赋值方式创建的String，会将String存储在 HEAP 中的 String pool 中；

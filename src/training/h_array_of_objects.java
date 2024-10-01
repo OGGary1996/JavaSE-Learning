@@ -32,7 +32,6 @@ class person_info{
 public class h_array_of_objects {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		// 可以使用Object Array保存不同的数据类型
 		// 调用Students_info
 		Students_info Students[] = new Students_info[3];

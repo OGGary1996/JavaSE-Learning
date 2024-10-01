@@ -3,7 +3,7 @@ package training;
 public class i_String_in_java {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
 		// String 本质上是java中的一个class 
 		
 		// create String
@@ -14,7 +14,6 @@ public class i_String_in_java {
 			// 修改
 		System.out.println(name.concat(" "+ name2));
 		System.out.println(name + " " + name2);
-		System.out.println(name.length());
 		System.out.println(name.trim());
 		System.out.println(name.toLowerCase());
 		System.out.println(name.isEmpty());
@@ -25,6 +24,7 @@ public class i_String_in_java {
 		System.out.println(name.compareToIgnoreCase(name2));
 		System.out.println(name.contains(name2));
 			// index
+		System.out.println(name.length());
 		System.out.println(name.charAt(2));
 		System.out.println(name.indexOf('L'));
 		System.out.println(name.lastIndexOf('L'));
