@@ -3,7 +3,7 @@ package training;
 public class d_ternary_operator_switch_statement {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
 		// 使用ternary operator 三元运算符来替代单个if-else 或者if-else if
 		int num1 = 8;
 		String result = num1 > 5 ? "Greater than 5" : "Less than 5";

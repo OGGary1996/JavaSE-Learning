@@ -3,7 +3,7 @@ package training;
 public class e_Loop {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
 		// while loop 可以用于无限循环的loop
 		int i = 1;
 		while (i <= 5) 

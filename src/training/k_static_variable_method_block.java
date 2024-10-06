@@ -1,12 +1,12 @@
 package training;
 
 class carnumbers{
-	static int nums;
+	static int nums; // 声明静态变量
 	String brand;
 
 	static { // static block 初始化static variables
 		System.out.println("static block is excuted");
-		nums = 10; // 初始化static variable nums
+		nums = 0; // 初始化static variable nums
 	}
 
 	carnumbers(String brand){

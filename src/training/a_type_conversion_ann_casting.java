@@ -3,7 +3,6 @@ package training;
 public class a_type_conversion_ann_casting {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		// 将小范围转为大范围
 		byte b = 127;
 		int a = 256;

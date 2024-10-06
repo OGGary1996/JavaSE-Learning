@@ -3,7 +3,7 @@ package training;
 public class b_assignment_relational_logical_operators {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
 		// assignment operators
 		// 加减乘除余
 		int num1 = 7;
