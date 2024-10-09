@@ -69,6 +69,7 @@ public class g_array {
 		// 3D array
 		// create 
 		int nums5[][][] = new int[3][4][4];
+		System.out.println(nums5[0][1][2]);
 		
 		
 		// jagged array 先不指定列

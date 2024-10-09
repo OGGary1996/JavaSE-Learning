@@ -30,7 +30,7 @@ class personal_info{
     }
 
     public String getname(){ //通过设置getter来进行受控制的访问
-        return name.toUpperCase(); // 只输出大些的结果
+        return name.toUpperCase(); // 只输出大写的结果
     }
     public int getage(){
         return age;

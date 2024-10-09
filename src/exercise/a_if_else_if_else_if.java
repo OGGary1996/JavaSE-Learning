@@ -56,6 +56,20 @@ public class a_if_else_if_else_if {
 				System.out.println("The biggest number is " + num3);
 			}
 		}
+
+		int num4 = 100;
+		int num5 = 400;
+		int num6 = 200;
+		if (num4 > num5 && num4 > num6){
+			System.out.println("num4 is the biggest number.");
+		}
+		else if (num5 > num4 && num5 > num6){
+			System.out.println("num5 is the biggest number.");
+		}
+		else {
+			System.out.println("num6 is the biggest number.");
+		}
+
 	}
 
 }
