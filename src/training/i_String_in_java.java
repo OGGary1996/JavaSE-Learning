@@ -29,6 +29,8 @@ public class i_String_in_java {
 		System.out.println(name.indexOf('L'));
 		System.out.println(name.lastIndexOf('L'));
 		
+
+
 	}
 
 }
