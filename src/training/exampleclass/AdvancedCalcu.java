@@ -6,7 +6,7 @@ public class AdvancedCalcu extends calculators { // 创建child class（同时�
     }
 
     @Override //重写parent class中的div()
-    public double div(double num1,double num2){
+    public final double div(double num1,double num2){
         if (num2 == 0){
             System.out.println("Can not be divided by 0!");
             return 0;

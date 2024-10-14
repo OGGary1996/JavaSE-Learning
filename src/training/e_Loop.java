@@ -102,7 +102,7 @@ public class e_Loop {
 		// no.3
 		System.out.println();
 		for (int j = 1 ; j <= 6; j++) {
-			for (int k = 1 ; k <= (x+1) ; k++) {
+			for (int k = 1 ; k <= (j+1) ; k++) {
 				System.out.print("*");
 			}
 			System.out.println();
