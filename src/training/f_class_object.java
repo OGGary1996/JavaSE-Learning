@@ -1,54 +1,6 @@
 package training;
-class calculators{
-	public int add(int num1 , int num2) {
-		int result = num1 + num2;
-		return result;
-	}
-	// method overloading 
-	public int add(int num1, int num2, int num3) {
-		int result = num1 + num2 + num3;
-		return result;
-	}
-	public double add(double num1 , int num2) {
-		double result = num1 + num2;
-		return result;
-	}
-	public int time(int num1, int num2) {
-		int result = num1 * num2;
-		return result;
-	}
-}
 
-class car_info{
-	int year;
-	String brand;
-	car_info(int year,String brand){
-		this.year = year;
-		this.brand = brand;
-	}
-	public void print_info() {
-		System.out.println("year: "+year+", brand: "+brand+".");
-	}
-}
-
-class Employees{
-    String Employee_name;
-    int Employee_id;
-    double Employee_salary;
-
-    public Employees(String Employee_name , int Employee_id , double Employee_salary){
-        this.Employee_name = Employee_name;
-        this.Employee_id = Employee_id;
-        this.Employee_salary = Employee_salary;
-    } 
-
-    public void print_bonus(){
-        System.out.println("Name: "+Employee_name);
-        System.out.println("ID: "+Employee_id);
-        System.out.println("Salary: "+Employee_salary);
-        System.out.println("Bonus is 20% of salary: "+Employee_salary*0.2);       
-    }
-}
+import training.exampleclass.*; // *意思是文件夹下所有的文件，但不包含文件夹内的文件夹，所以如果有多级文件结构，必须指向需要调用的那个文件夹
 
 public class f_class_object {
 

@@ -1,33 +1,8 @@
 package training;
 
-class Students_info{
-	int Student_id;
-	String Student_name;
-	int Student_age;
-	Students_info(int id, String name,int age){
-		Student_id = id;
-		Student_name = name;
-		Student_age = age;
-	}
-	public void print_info(){
-		System.out.println("Student_id: "+Student_id+", Student_name: "+Student_name+", Student_age: "+Student_age+".");
-	}
-}
-
-class person_info{
-	String person_name;
-	int person_age;
-	char person_gender;
-	person_info(String name , int age , char gender ){
-		person_name = name;
-		person_age = age;
-		person_gender = gender;
-	}
-	public void print_info() {
-		System.out.println("Name: "+person_name+", age: "+person_age+", gender: "+person_gender+".");
-	}
-}
-
+import training.exampleclass.Students_info;
+import training.exampleclass.person_info;
+import training.exampleclass.car_info;
 
 public class h_array_of_objects {
 

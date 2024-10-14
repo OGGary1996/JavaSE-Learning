@@ -1,27 +1,11 @@
 package training;
 // 为了保留原始的parent class，并且创建child class时不用重写代码，所以我们使用inheritance
+// 任何子类对象都可以被看作是其父类对象的实例，这是因为子类继承了父类的所有特性（字段和方法）。因此，可以使用父类类型的引用变量来指向子类对象。
 // single level
 
-class Animal{ // 创建一个parent class
-    String animalName;
-    public void eat(){
-        System.out.println(animalName + " is eating.");
-    }
-}
-
-class Dog extends Animal{ // 创建child class，并继承parent class的属性和成员变量
-    public void bark(){
-        System.out.println(animalName + " is barking"); // 继承了parent class 的成员变量,并且 扩展 其他 方法。
-    }
-}
-
-class Cat extends Animal{ // 创建另一child class，并继承parent class的属性和成员变量
-    @Override
-    public void eat(){ // 直接采用了parent class中的method名称 即重写该方法
-        super.eat(); // 使用super关键字 使得原始的方法虽然经过重写 但是还是可以被调用，这个super表示parent class
-        System.out.println(animalName + " is eating dog's food!"); // 重写该方法
-    }
-}
+import training.exampleclass.Animal;
+import training.exampleclass.Cat;
+import training.exampleclass.Dog;
 
 public class n_Inheritance_single_level {
     public static void main(String[] args){
@@ -34,10 +18,10 @@ public class n_Inheritance_single_level {
         BBB.eat();  // 调用从parent class继承的 原始 方法
         BBB.bark(); // 调用child class中扩展 的 新方法
 
-        Cat CCC = new Cat();
+        Animal CCC = new Cat(); // 引用parent class但指向了child class
         CCC.animalName = "CCC";
-        CCC.eat(); // 输出的结果为child class中被 重写 的 方法
-        // 也可以再次调用重写之前的方法 使用super关键字
-        
+        CCC.eat(); // 输出的结果为child class中被 重写 的方法
+        // 也可以再次调用重写之前的方法
+        AAA.eat(); // 这里根据引用的class不同，不同的object对同一个方法产生了不同的行为（多态）
     }
 } 
