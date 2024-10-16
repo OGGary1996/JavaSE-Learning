@@ -1,5 +1,6 @@
 package training;
 
+
 public class i_String_in_java {
 
 	public static void main(String[] args) {
@@ -30,7 +31,11 @@ public class i_String_in_java {
 		System.out.println(name.lastIndexOf('L'));
 		
 
+		
+		
 
+
+		
 	}
 
 }
