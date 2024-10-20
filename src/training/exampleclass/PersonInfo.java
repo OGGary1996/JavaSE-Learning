@@ -1,10 +1,10 @@
 package training.exampleclass;
 
-public class person_info {
+public class PersonInfo {
 	String person_name;
 	int person_age;
 	char person_gender;
-	public person_info(String name , int age , char gender ){
+	public PersonInfo(String name , int age , char gender ){
 		person_name = name;
 		person_age = age;
 		person_gender = gender;

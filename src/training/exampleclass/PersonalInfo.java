@@ -1,9 +1,9 @@
 package training.exampleclass;
 
-public class personal_info {
+public class PersonalInfo {
     private String name;
     private int age;
-    public personal_info(String name, int age){ //虽然是private变量 但是仍然可通过constructor在new object时传递参数并初始化变量
+    public PersonalInfo(String name, int age){ //虽然是private变量 但是仍然可通过constructor在new object时传递参数并初始化变量
         this.name = name;               // 在之后就无法直接传递并修改变量了
         this.age = age;                 // 也可以不设置constructor，因为在后面会设置setter方法来传递参数
     }

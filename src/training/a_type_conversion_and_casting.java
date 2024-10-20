@@ -1,6 +1,6 @@
 package training;
 
-public class a_type_conversion_ann_casting {
+public class a_type_conversion_and_casting {
 
 	public static void main(String[] args) {
 		// 将小范围转为大范围

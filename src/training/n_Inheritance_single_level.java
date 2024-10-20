@@ -4,24 +4,23 @@ package training;
 // single level
 
 import training.exampleclass.Animal;
-import training.exampleclass.Cat;
-import training.exampleclass.Dog;
+import training.exampleclass.AnimalCat;
+import training.exampleclass.AnimalDog;
 
 public class n_Inheritance_single_level {
     public static void main(String[] args){
-        Animal AAA = new Animal();
-        AAA.animalName = "AAA";
-        AAA.eat(); // 调用parent class的方法
+        Animal Animal1 = new Animal("Animal1");
+        Animal1.eat(); // 调用parent class的方法 但是无法调用child class中的方法
         
-        Dog BBB = new Dog();
-        BBB.animalName = "BBB";
-        BBB.eat();  // 调用从parent class继承的 原始 方法
-        BBB.bark(); // 调用child class中扩展 的 新方法
+        AnimalDog Dog1 = new AnimalDog("Dog1");
 
-        Animal CCC = new Cat(); // 引用parent class但指向了child class
-        CCC.animalName = "CCC";
-        CCC.eat(); // 输出的结果为child class中被 重写 的方法
+        Dog1.sleep();  // 调用从parent class继承的方法
+        Dog1.eat(); // 调用child class中重写的方法
+        Dog1.behave(); // 调用child class中扩展 的 新方法
+
+        Animal Cat1 = new AnimalCat("Cat1"); // 引用parent class但指向了child class的object
+        Cat1.eat(); // 输出的结果为child class中被 重写 的方法
         // 也可以再次调用重写之前的方法
-        AAA.eat(); // 这里根据引用的class不同，不同的object对同一个方法产生了不同的行为（多态）
+        Animal1.eat(); // 这里根据引用的class不同，不同的object对同一个方法产生了不同的行为（多态）
     }
 } 

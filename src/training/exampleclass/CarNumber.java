@@ -1,6 +1,6 @@
 package training.exampleclass;
 
-public class carnumbers {
+public class CarNumber {
 	public static int nums; // 声明静态变量
 	public String brand;
 
@@ -9,7 +9,7 @@ public class carnumbers {
 		nums = 0; // 初始化static variable nums
 	}
 
-	public carnumbers(String brand){
+	public CarNumber(String brand){
 		this.brand = brand;
 		nums++;  // 每次新增一个车辆之后 static variavle nums会加1
 	}

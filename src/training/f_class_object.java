@@ -7,15 +7,11 @@ public class f_class_object {
 	public static void main(String[] args) {
 
 		// 调用calculator
-		calculators addnums = new calculators();
+		Calculators addnums = new Calculators();
 		System.out.println(addnums.add(3,5));
 		//调用car_info
-		car_info ZK = new car_info (2016,"Subaru");
+		CarInfo ZK = new CarInfo (2016,"Subaru");
 		ZK.print_info();
-		
-		// 调用employees
-	    Employees emp1 = new Employees("ke",1,8356.7);
-    	emp1.print_bonus();
 
 	}
 

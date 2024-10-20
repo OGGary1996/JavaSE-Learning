@@ -1,9 +1,9 @@
 package training.exampleclass;
 
-public class car_info {
+public class CarInfo {
 	int year;
 	String brand;
-	public car_info(int year,String brand){
+	public CarInfo(int year,String brand){
 		this.year = year;
 		this.brand = brand;
 	}

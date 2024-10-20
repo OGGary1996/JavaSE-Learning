@@ -10,7 +10,7 @@ public class s_ObjectClass_equals_toString_hashCode extends Object { // 可以�
     public static void main(String[] args){
     // toString()方法
     //  如果打印一个object本身，java会默认加上隐式的toString()方法
-    Animal animal1 = new Animal();
+    Animal animal1 = new Animal("");
     System.out.println(animal1);
     System.out.println(animal1.toString()); // 返回的结果一致 training.exampleclass.Animal@2dda6444
     /*  public String toString() {
@@ -37,9 +37,8 @@ public class s_ObjectClass_equals_toString_hashCode extends Object { // 可以�
     //     2、通过new String(“。。。”)创建的String object储存在heap中，两个相同内容的object的内存地址并不一样
     //   所以，两个String object的字符内容一样时，内存地址可能不同，但是两个object内存地址相等是肯定equals()相等
     
-    Animal animal2 = new Animal();
-    animal2.animalName = "Birds";
-    Animal animal3 = new Animal();
+    Animal animal2 = new Animal("Birds");
+    Animal animal3 = new Animal("Birds");
     animal3.animalName = "Birds";
     boolean result = animal2.equals(animal3);
     System.out.println(result); // 输出结果是false，因为两个object中的String虽然字符内容相同，但是本质上是存在heap中的两个object，内存地址不相等
