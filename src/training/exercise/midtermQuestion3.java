@@ -1,4 +1,4 @@
-package training.exam;
+package training.exercise;
 
 public class midtermQuestion3 {
     public static void main(String[] args){

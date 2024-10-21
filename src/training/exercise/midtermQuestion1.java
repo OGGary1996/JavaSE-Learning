@@ -1,4 +1,4 @@
-package training.exam;
+package training.exercise;
 import java.util.Scanner;
 public class midtermQuestion1 {
     public static void main(String[] args){
