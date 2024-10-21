@@ -1,4 +1,4 @@
-package training;
+package training.tutorial;
 
 import training.exampleclass.CarNumber;
 

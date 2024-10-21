@@ -1,4 +1,4 @@
-package training;
+package training.tutorial;
 
 public class d_ternary_operator_switch_statement {
 

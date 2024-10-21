@@ -1,4 +1,4 @@
-package training;
+package training.tutorial;
 
 public class a_type_conversion_and_casting {
 

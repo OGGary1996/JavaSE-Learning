@@ -1,4 +1,4 @@
-package training;
+package training.tutorial;
 // 在java中所有的class都是 Object class 的一个child class
 // 在创建class时，java会默认加上隐式的继承 class class_name extends Object
 // 这也是为什么在一个class中 就算没有创建方法，也可以直接使用Object的方法

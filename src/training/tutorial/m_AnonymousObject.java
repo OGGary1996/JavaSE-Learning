@@ -1,4 +1,4 @@
-package training;
+package training.tutorial;
 
 class A{
     A(){ // constructor 

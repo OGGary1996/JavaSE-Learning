@@ -1,4 +1,4 @@
-package training;
+package training.tutorial;
 // 多态有两种表现形式 1:method overloading(compile-time polymorphism),2:method overriding(run-time polymorphism)
 // method overriding 
 //  在java中每一个child class都可以作为parent class的一个object实例，可以在引用parent class是指向其中一个Child class

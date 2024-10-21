@@ -1,4 +1,4 @@
-package training;
+package training.tutorial;
 
 import training.exampleclass.*; // *意思是文件夹下所有的文件，但不包含文件夹内的文件夹，所以如果有多级文件结构，必须指向需要调用的那个文件夹
 

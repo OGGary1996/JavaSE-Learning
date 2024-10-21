@@ -1,4 +1,4 @@
-package training;
+package training.tutorial;
 // 为了保留原始的parent class，并且创建child class时不用重写代码，所以我们使用inheritance
 // 任何子类对象都可以被看作是其父类对象的实例，这是因为子类继承了父类的所有特性（字段和方法）。因此，可以使用父类类型的引用变量来指向子类对象。
 // single level

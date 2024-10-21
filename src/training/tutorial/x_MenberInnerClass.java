@@ -1,4 +1,4 @@
-package training;
+package training.tutorial;
 import training.exampleclass.Vehicle;
 public class x_MenberInnerClass {
 // menber inner class 成员内部类：定义在类中的类，可以访问外部类的所有成员，包括私有成员，但是外部类不能访问内部类的成员，只能通过创建内部类的对象来访问

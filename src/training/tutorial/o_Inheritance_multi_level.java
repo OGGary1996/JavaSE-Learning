@@ -1,4 +1,4 @@
-package training;
+package training.tutorial;
 // 为了保留原始的parent class，并且创建child class时不用重写代码，所以我们使用inheritance
 // multi-level inheritance 多重的继承
 

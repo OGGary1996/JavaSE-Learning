@@ -1,4 +1,4 @@
-package training;
+package training.tutorial;
 
 // final关键字有三个主要的用途，后面+variable/method/class
 

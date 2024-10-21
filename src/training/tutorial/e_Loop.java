@@ -1,4 +1,4 @@
-package training;
+package training.tutorial;
 
 public class e_Loop {
 

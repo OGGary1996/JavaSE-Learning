@@ -1,4 +1,4 @@
-package training;
+package training.tutorial;
 // 在创建child class 的object时会先调用parent class的constructor 然后再调用子类的constructor
 //  super()；所有的constructor中第一句都是一个默认的语句 super()；
 //  1、super()的意思是调用当前class的parent class中的constructor，默认super()，无参数 所以会默认调用parent class中的default constructor

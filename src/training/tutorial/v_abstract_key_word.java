@@ -1,4 +1,4 @@
-package training;
+package training.tutorial;
 import training.exampleclass.ShapeCal;
 import training.exampleclass.ShapeCircle;
 import training.exampleclass.ShapeRectangle;

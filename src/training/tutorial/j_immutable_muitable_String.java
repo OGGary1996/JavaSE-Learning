@@ -1,4 +1,4 @@
-package training;
+package training.tutorial;
 
 public class j_immutable_muitable_String {
 

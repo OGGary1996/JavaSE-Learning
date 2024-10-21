@@ -1,4 +1,4 @@
-package training;
+package training.tutorial;
 
 public class b_assignment_relational_logical_operators {
 
