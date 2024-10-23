@@ -47,6 +47,5 @@ public class x_MenberInnerClass {
     Vehicle.Bike bike1 = anonymousVehicle2.new Bike("bike1");
     bike1.bell();
     bike1.run();
-
     }
 }
