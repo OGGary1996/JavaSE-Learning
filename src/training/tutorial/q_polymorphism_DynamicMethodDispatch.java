@@ -11,17 +11,15 @@ import training.exampleclass.AnimalDog;
 
 public class q_polymorphism_DynamicMethodDispatch {
 
-    public static void makeSound(Animal animals){ // 创建一个static method来展示多态，
-        animals.sound();                          // 这个方法会根据传递进来的值Animal（固定的种类即父类） animals来自动判断应该调用哪个child class中的sund()方法
-    }
+
     public static void main(String[] args){
         Animal animalDefault = new Animal(""); // 引用父类 指向这个父类
         Animal cat = new AnimalCat("cat1"); // 引用父类 指向其中一个子类Cat()
         Animal dog = new AnimalDog("dog1"); // 引用父类 指向其中一个子类Dog()
         
-        makeSound(animalDefault); // 调用之前的static method，因为在同一个class内 方法前面不用写class name
-        makeSound(cat);    // 可以通过集合批量处理多个子类对象
-        makeSound(dog);    
+        Animal.makeSound(animalDefault); // 调用之前的static method
+        Animal.makeSound(cat);    // 可以通过集合批量处理多个子类对象
+        Animal.makeSound(dog);    
         // static method不是必须的操作，可以直接调用方法，只是需要给每个子类对象单独调用方法
         animalDefault.sound();
         cat.sound();
@@ -34,7 +32,7 @@ public class q_polymorphism_DynamicMethodDispatch {
         animals[1] = new AnimalDog("dog2");
 
         for (Animal animal : animals){
-            makeSound(animal);
+            Animal.makeSound(animal);
         }
     }
 }

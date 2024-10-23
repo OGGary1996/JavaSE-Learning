@@ -18,6 +18,10 @@ public class Animal {
         System.out.println("Animal is sleeping.");
     }
 
+    public static void makeSound(Animal animals){ // 创建一个static method来展示多态，
+        animals.sound();                          // 这个方法会根据传递进来的值Animal（固定的种类即父类） animals来自动判断应该调用哪个child class中的sund()方法
+    }
+    
     @Override
     public String toString(){ // 重写Object class中的默认的toString()方法
         return "made by KE";
