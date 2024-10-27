@@ -1,6 +1,6 @@
 package training.tutorial;
 
-public class g_array {
+public class g_array1 {
 
 	public static void main(String[] args) {
 

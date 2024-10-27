@@ -9,7 +9,7 @@ import training.exampleclass.Animal;
 import training.exampleclass.AnimalCat;
 import training.exampleclass.AnimalDog;
 
-public class q_polymorphism_DynamicMethodDispatch {
+public class l_Polymorphism1_DynamicMethodDispatch {
 
 
     public static void main(String[] args){

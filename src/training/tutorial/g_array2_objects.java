@@ -4,7 +4,7 @@ import training.exampleclass.StudentsInfo;
 import training.exampleclass.PersonInfo;
 import training.exampleclass.CarInfo;
 
-public class h_array_of_objects {
+public class g_array2_objects {
 
 	public static void main(String[] args) {
 		// 可以使用Object Array保存不同的数据类型

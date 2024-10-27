@@ -1,6 +1,6 @@
 package training.tutorial;
 import training.exampleclass.Vehicle;
-public class x_MenberInnerClass {
+public class q_Innerclass2_Menber {
 // menber inner class 成员内部类：定义在类中的类，可以访问外部类的所有成员，包括私有成员，但是外部类不能访问内部类的成员，只能通过创建内部类的对象来访问
 // 1. 成员内部类不能有静态成员，因为成员内部类是依赖于外部类的，只有在创建外部类的对象后才能创建内部类的对象
 // 2. 外部类不能访问内部类的成员，只能通过创建内部类的对象来访问
@@ -17,11 +17,11 @@ public class x_MenberInnerClass {
 
     public static void main(String[] args) {
     // 也可以在外部类mian静态方法中创建一个成员内部类的对象，但是static方法不能直接访问非静态成员（包括内部类），所以需要先创建一个外部类的对象
-    x_MenberInnerClass outer = new x_MenberInnerClass();
-    x_MenberInnerClass.innerClass inner = outer.new innerClass(); // 创建一个成员内部类的对象
+    q_Innerclass2_Menber outer = new q_Innerclass2_Menber();
+    q_Innerclass2_Menber.innerClass inner = outer.new innerClass(); // 创建一个成员内部类的对象
     inner.print();
     // 或者在创建了外部类之后使用createInnerClass()方法来创建一个内部类的对象
-    x_MenberInnerClass outer1 = new x_MenberInnerClass();
+    q_Innerclass2_Menber outer1 = new q_Innerclass2_Menber();
     outer1.createInnerClass();
 
     
@@ -31,11 +31,8 @@ public class x_MenberInnerClass {
     Vehicle anonymousVehicle2 = new Vehicle("anonymousVehicle2") {
         @Override
         public void run() {
-            System.out.println(name + " is running.");
+            System.out.println(name + " is ready to create a car or a bike.");
         }
-        public void musicPlayer(){
-            System.out.println(name + " is playing music.");
-        }     
     };
 
     // 创建Vehicle类的成员内部类的对象

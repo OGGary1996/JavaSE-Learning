@@ -1,6 +1,6 @@
 package training.tutorial;
 
-public class j_immutable_muitable_String {
+public class h_StringInJava2_immutable_muitable {
 
 	public static void main(String[] args) {
 		// Immutable, String 不可变，对于String的修改实际上是创建了一个新的Object String

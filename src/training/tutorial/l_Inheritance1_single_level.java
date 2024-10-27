@@ -7,7 +7,7 @@ import training.exampleclass.Animal;
 import training.exampleclass.AnimalCat;
 import training.exampleclass.AnimalDog;
 
-public class n_Inheritance_single_level {
+public class l_Inheritance1_single_level {
     public static void main(String[] args){
         Animal Animal1 = new Animal("Animal1");
         Animal1.eat(); // 调用parent class的方法 但是无法调用child class中的方法

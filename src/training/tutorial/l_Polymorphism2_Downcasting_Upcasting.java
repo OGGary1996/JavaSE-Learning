@@ -4,7 +4,7 @@ import training.exampleclass.Animal;
 import training.exampleclass.AnimalCat;
 import training.exampleclass.AnimalDog;
 
-public class t_downcasting_upcasting {
+public class l_Polymorphism2_Downcasting_Upcasting {
     
     public static void main(String[] args){
         // upcasting

@@ -28,7 +28,7 @@ class BBB extends AAA{
         System.out.println("In BBB's parameterized constructor.");
     }
 }
-public class p_Inheritance_super_this {
+public class l_Inheritance3_super_this {
     public static void main(String[] args){
         BBB object1 = new BBB(); // 不传递参数 此时会调用class B中default constructor，其中因为是super()， 又会调用A中的default constructor
         System.out.println("");

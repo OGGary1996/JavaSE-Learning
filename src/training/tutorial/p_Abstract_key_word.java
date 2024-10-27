@@ -4,7 +4,7 @@ import training.exampleclass.ShapeCircle;
 import training.exampleclass.ShapeRectangle;
 
 
-public class v_abstract_key_word {
+public class p_Abstract_key_word {
     public static double autoArea(ShapeCal name){ // 创建一个静态方法来自动计算面积
         return name.area();
     }

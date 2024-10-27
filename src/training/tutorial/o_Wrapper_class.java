@@ -1,6 +1,6 @@
 package training.tutorial;
 
-public class u_wrapper_class {
+public class o_Wrapper_class {
     public static void main(String[] args){
         // 包装类将基本数据类型封装成对象，使得基本数据类型具有对象的特性，因为对象可以调用方法，所以基本数据类型也可以调用方法
         // 基本数据类型和包装类之间的转换

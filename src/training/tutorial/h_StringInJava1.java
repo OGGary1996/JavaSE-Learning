@@ -1,7 +1,7 @@
 package training.tutorial;
 
 
-public class i_String_in_java {
+public class h_StringInJava1 {
 
 	public static void main(String[] args) {
 

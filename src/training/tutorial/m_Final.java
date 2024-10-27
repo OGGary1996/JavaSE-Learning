@@ -2,7 +2,7 @@ package training.tutorial;
 
 // final关键字有三个主要的用途，后面+variable/method/class
 
-public class r_final {
+public class m_Final {
     public static void main(String[] args){
     // final + variable
     final int num1 = 8;

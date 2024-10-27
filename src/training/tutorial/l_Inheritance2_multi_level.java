@@ -6,7 +6,7 @@ import training.exampleclass.CalclatorsAdvanced;
 import training.exampleclass.CalculatorsFinal;
 
 
-public class o_Inheritance_multi_level {
+public class l_Inheritance2_multi_level {
     public static void main(String[] args){
         CalclatorsAdvanced num1 = new CalclatorsAdvanced(); // 创建child class 的 object
         System.out.println(num1.multi(5,3)); // 调用parent class中的方法。

@@ -1,7 +1,7 @@
 package training.tutorial;
 import training.exampleclass.Animal;
 import training.exampleclass.Vehicle;
-public class w_AnonymousInnerClass {
+public class q_Innerclass1_Anonymous {
     public static void main(String[] args) {
 // Anonymouse inner class 匿名内部类，位于一个方法内部，用于创建一个只需要使用一次的子类来重写父类或接口的方法，不需要单独创建一个子类从而简化代码和文件的管理
 // 1. 匿名内部类没有类名，没有构造方法，没有静态成员，没有实现接口，没有继承类，只能使用一次

@@ -2,7 +2,7 @@ package training.tutorial;
 
 import training.exampleclass.CarNumber;
 
-public class k_static_variable_method_block {
+public class i_Static_Variable_Method_Block {
 
 	public static void main(String[] args) {
 		// 在main方法第一步加载class的时候会马上执行static block

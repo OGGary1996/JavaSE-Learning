@@ -6,7 +6,7 @@ package training.tutorial;
 import training.exampleclass.Animal;
 
 
-public class s_ObjectClass_equals_toString_hashCode extends Object { // 可以将隐式继承写出来
+public class n_ObjectClass_equals_toString_hashCode extends Object { // 可以将隐式继承写出来
     public static void main(String[] args){
     // toString()方法
     //  如果打印一个object本身，java会默认加上隐式的toString()方法

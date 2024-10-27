@@ -4,7 +4,7 @@ package training.tutorial;
 // 但是虽然private变量，但是仍然可以通过构造函数在new object时向这个变量传递参数，在之后就无法访问private变量了
 import training.exampleclass.PersonalInfo;;
 
-public class l_encapsulation {
+public class j_Encapsulation {
     public static void main(String[] args){
     PersonalInfo person1 = new PersonalInfo(null, 0);
     person1.setname("kezhang");
