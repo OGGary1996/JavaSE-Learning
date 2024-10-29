@@ -1,6 +1,6 @@
 package training.tutorial;
 
-public class c_condition_statements {
+public class c_condition_statements_1 {
 
 	public static void main(String[] args) {
 
