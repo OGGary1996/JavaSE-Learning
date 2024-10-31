@@ -10,8 +10,6 @@ import training.exampleclass.AnimalCat;
 import training.exampleclass.AnimalDog;
 
 public class l_Polymorphism1_DynamicMethodDispatch {
-
-
     public static void main(String[] args){
         Animal animalDefault = new Animal(""); // 引用父类 指向这个父类
         Animal cat = new AnimalCat("cat1"); // 引用父类 指向其中一个子类Cat()

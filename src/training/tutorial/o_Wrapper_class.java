@@ -21,7 +21,6 @@ public class o_Wrapper_class {
 
         // 字符串转换为基本数据类型
         int i = Integer.parseInt(str); // 通过parseInt方法，先转换为包装类 然后再隐式转换为基本数据类型
-
         // 基本数据类型转换为字符串
         String str2 = Integer.toString(i); // 通过toString方法，先转换为包装类 然后再调用toString方法
     }
