@@ -13,7 +13,7 @@ import java.util.HashMap;
     * 4. 如果插入的键已经存在，新值会覆盖旧值。
  */
 
-public class x_Collection_API2_Maps {
+public class x_CollectionAPI2_Maps {
     public static void main(String[] args){
     // 创建一个HashMap对象，键是String类型，值是Integer类型
     // HashMap是Map接口的一个实现类
@@ -35,6 +35,9 @@ public class x_Collection_API2_Maps {
         for (String key : fruits.keySet()){
             System.out.println("Fruits: " + key + ", Value: " + fruits.get(key));
         }
+        
+        fruits.keySet().forEach(key -> System.out.println("Fruits: " + key + ", Value: " + fruits.get(key)));
+        
 
         Map<String,Integer> cars = new HashMap<String, Integer>();
         cars.put("Mazda", 2009);

@@ -1,6 +1,7 @@
 package training.tutorial;
 import java.util.List; // 继承自Collection接口
 import java.util.Set; // 继承自Collection接口
+// import java.util.function.Consumer;
 
 import training.exampleclass.CarInfo;
 
@@ -20,7 +21,7 @@ import java.util.Iterator;
     * Collection 接口是 List、Set 和 Queue 接口的父接口。
     * Collection 主要用于操作集合内部，接口中定义了一系列方法。
  */
-public class x_Collection_API1_Collection {
+public class x_CollectionAPI1_Collection {
     public static void main(String[] args){
         // Example 1: List接口(其中的ArrayList类)
         List<Integer> nums = new ArrayList<Integer>(); // 创建一个ArrayList对象 nums
@@ -39,19 +40,22 @@ public class x_Collection_API1_Collection {
         for (int i = 0; i < nums.size(); i++){
             System.out.println("value: " + nums.get(i));
         }
+        /* .forEach()方法对每个元素遍历进行操作
+        *   .forEach()方法使用一个Lambda表达式作为参数，这个Lambda表达式实际上是一个Consumer接口的实例
+        *   Consumer<Integer> print = n -> System.out.println(n);
+        *   nums.forEach(print);
+        */
+        nums.forEach(n -> System.out.println(n));
+
         // Example 1.1 
-        List<CarInfo> cars = new ArrayList<CarInfo>();
-        CarInfo car1 = new CarInfo(2009, "Mazda");
-        CarInfo car2 = new CarInfo(2019, "Audi");
-        CarInfo car3 = new CarInfo(2016, "Subaru");
-        cars.add(car1);
-        cars.add(car2);
-        cars.add(car3);
+        List<CarInfo> carsGroup1 = new ArrayList<CarInfo>();
+        carsGroup1.add(new CarInfo(2009, "Mazda"));
+        carsGroup1.add(new CarInfo(2019, "Audi"));
+        carsGroup1.add(new CarInfo(2016, "Subaru"));
 
-        for (CarInfo car : cars){
-            car.print_info();
-        }
+        carsGroup1.forEach(car -> car.print_info());
 
+        
 
         // Example 2: Set接口(其中的HashSet类) 
         //  Set接口只能支持不重复的元素
@@ -74,18 +78,15 @@ public class x_Collection_API1_Collection {
         }
 
         // Example 2.1
-        Set<CarInfo> cars1 = new HashSet<CarInfo>();
-        CarInfo car4 = new CarInfo(2009, "Mazda");
-        CarInfo car5 = new CarInfo(2019, "Audi");
-        CarInfo car6 = new CarInfo(2016, "Subaru");
-        cars1.add(car4);
-        cars1.add(car5);
-        cars1.add(car6);
-        for (CarInfo car : cars1){
+        Set<CarInfo> carsGroup2 = new HashSet<CarInfo>();
+        carsGroup2.add(new CarInfo(2009, "Mazda"));
+        carsGroup2.add(new CarInfo(2019, "Audi"));
+        carsGroup2.add(new CarInfo(2016, "Subaru"));
+        for (CarInfo car : carsGroup2){
             car.print_info();
         }
 
-        Iterator<CarInfo> car = cars1.iterator();
+        Iterator<CarInfo> car = carsGroup2.iterator();
         while (car.hasNext()){
             car.next().print_info();
         }
