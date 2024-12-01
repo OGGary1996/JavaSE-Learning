@@ -7,6 +7,7 @@ public class Classroom {
             Scanner scan = new Scanner(System.in);
             System.out.println("Please input the student count: ");
             studentCount = scan.nextInt();
+            scan.close();
         }
         public int getStudentCount(){
             return studentCount;
