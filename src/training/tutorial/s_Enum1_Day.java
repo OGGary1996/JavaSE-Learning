@@ -1,6 +1,6 @@
 package training.tutorial;
 
-import training.exampleenum.Day;
+import training.tutorial.exampleenum.Day;
 
 // Enum是一种特殊的数据类型，用于定义常量
 // Enum也是一种class，但是它有一些特殊的特性，比如不能被继承，不能创建实例，不能被扩展

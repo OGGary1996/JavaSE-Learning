@@ -5,9 +5,9 @@ package training.tutorial;
 //  通过这个方式，可以使用同一个parent class指向任意一个child class被overriding的method来实现不同的行为。
 //  (无论这个object前面的类型是parent class还是child class，最终创建的new object本身是最重要的关键，这个object决定了要调用哪个class的method)
 
-import training.exampleclass.Animal;
-import training.exampleclass.AnimalCat;
-import training.exampleclass.AnimalDog;
+import training.tutorial.exampleclass.Animal;
+import training.tutorial.exampleclass.AnimalCat;
+import training.tutorial.exampleclass.AnimalDog;
 
 public class l_Polymorphism1_DynamicMethodDispatch {
     public static void main(String[] args){

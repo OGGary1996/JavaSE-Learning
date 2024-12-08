@@ -1,8 +1,8 @@
 package training.tutorial;
 
-import training.exampleclass.Animal;
-import training.exampleclass.AnimalCat;
-import training.exampleclass.AnimalDog;
+import training.tutorial.exampleclass.Animal;
+import training.tutorial.exampleclass.AnimalCat;
+import training.tutorial.exampleclass.AnimalDog;
 
 public class l_Polymorphism2_Downcasting_Upcasting {
     

@@ -6,7 +6,9 @@ package training.tutorial;
 	2.	无数据竞争：多个线程同时读取、写入或更新数据时，不会相互干扰或破坏数据。
 	3.	并发问题控制：避免由于线程不当操作引发的问题，如死锁、资源饥饿等。
  */
-import training.exampleThread.*;
+import training.tutorial.exampleThread.Counter1;
+import training.tutorial.exampleThread.Counter2;
+
 public class w_Thread3_Safe {
     public static void main(String[] args){
         // example: 数据竞争和冲突

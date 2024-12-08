@@ -1,5 +1,7 @@
 package training.tutorial;
-import training.exampleThread.*;
+import training.tutorial.exampleThread.ThreadA;
+import training.tutorial.exampleThread.ThreadB;
+
 // Thread中的start方法会启动一个线程，然后调用run方法，run方法中的代码会在线程启动时执行。
     // 所以不能直接调用run方法，必须调用start方法，启动线程。
     // 如果直接调用run方法，那么run方法中的代码会在当前的Main线程中执行，而不会启动一个新的线程；这跟调用一个普通的方法是一样的。

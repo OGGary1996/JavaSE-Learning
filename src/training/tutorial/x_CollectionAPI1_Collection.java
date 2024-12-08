@@ -3,7 +3,7 @@ import java.util.List; // 继承自Collection接口
 import java.util.Set; // 继承自Collection接口
 // import java.util.function.Consumer;
 
-import training.exampleclass.CarInfo;
+import training.tutorial.exampleclass.CarInfo;
 
 import java.util.ArrayList; // 继承自List接口
 import java.util.HashSet; // 继承自Set接口

@@ -2,8 +2,8 @@ package training.tutorial;
 // 为了保留原始的parent class，并且创建child class时不用重写代码，所以我们使用inheritance
 // multi-level inheritance 多重的继承
 
-import training.exampleclass.CalculatorsAdvanced;
-import training.exampleclass.CalculatorsFinal;
+import training.tutorial.exampleclass.CalculatorsAdvanced;
+import training.tutorial.exampleclass.CalculatorsFinal;
 
 
 public class l_Inheritance2_multi_level {

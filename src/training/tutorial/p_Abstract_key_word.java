@@ -1,7 +1,7 @@
 package training.tutorial;
-import training.exampleclass.ShapeCal;
-import training.exampleclass.ShapeCircle;
-import training.exampleclass.ShapeRectangle;
+import training.tutorial.exampleclass.ShapeCal;
+import training.tutorial.exampleclass.ShapeCircle;
+import training.tutorial.exampleclass.ShapeRectangle;
 
 
 public class p_Abstract_key_word {

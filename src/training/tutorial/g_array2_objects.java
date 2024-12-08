@@ -1,8 +1,8 @@
 package training.tutorial;
 
-import training.exampleclass.StudentsInfo;
-import training.exampleclass.PersonInfo;
-import training.exampleclass.CarInfo;
+import training.tutorial.exampleclass.StudentsInfo;
+import training.tutorial.exampleclass.PersonInfo;
+import training.tutorial.exampleclass.CarInfo;
 
 public class g_array2_objects {
 

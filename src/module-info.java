@@ -10,6 +10,6 @@ module JavaExercise {
     requires org.junit.platform.commons;
     requires org.junit.jupiter.engine;
     requires org.junit.platform.launcher;
-    exports training.exampleclass;
-    opens training.exampleclass;
+    exports training.tutorial.exampleclass;
+    opens training.tutorial.exampleclass;
 }

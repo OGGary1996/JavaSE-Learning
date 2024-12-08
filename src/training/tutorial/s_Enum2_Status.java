@@ -1,5 +1,5 @@
 package training.tutorial;
-import training.exampleenum.Status;
+import training.tutorial.exampleenum.Status;
 public class s_Enum2_Status {
     public static void main(String[] args) {
         Status s1 = Status.Running;

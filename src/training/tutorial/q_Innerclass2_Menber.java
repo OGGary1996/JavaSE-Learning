@@ -1,5 +1,5 @@
 package training.tutorial;
-import training.exampleclass.Vehicle;
+import training.tutorial.exampleclass.Vehicle;
 public class q_Innerclass2_Menber {
 // menber inner class 成员内部类：定义在类中的类，可以访问外部类的所有成员，包括私有成员，但是外部类不能访问内部类的成员，只能通过创建内部类的对象来访问
 // 1. 成员内部类不能有静态成员，因为成员内部类是依赖于外部类的，只有在创建外部类的对象后才能创建内部类的对象
