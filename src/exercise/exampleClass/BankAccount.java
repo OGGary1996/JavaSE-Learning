@@ -1,13 +1,9 @@
 package exercise.exampleClass;
 import java.util.Scanner;
 public class BankAccount {
-    private String accountNumber;
-    private String accountName;
     private double balance;
 
     public BankAccount(String accountNumber,String accountName,double balance){
-        this.accountNumber = "0000-0000-0000-0000";
-        this.accountName = " ";
         this.balance = 0.00;
     }
 
@@ -16,6 +12,7 @@ public class BankAccount {
             Scanner scan = new Scanner(System.in);
             System.out.println("Please input the amount of deposit: ");
             double deposit = scan.nextDouble();
+            scan.close();
             if(deposit >= 0){
                 this.balance = deposit+this.balance;
                 break;
@@ -31,6 +28,7 @@ public class BankAccount {
             Scanner scan2 = new Scanner(System.in);
             System.out.println("Please input the amount of withdraw: ");
             double withdraw = scan2.nextDouble();
+            scan2.close();
             if (withdraw <= this.balance){
                 this.balance -= withdraw; 
                 break;

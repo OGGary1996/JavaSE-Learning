@@ -31,10 +31,9 @@ class BBB extends AAA{
 public class l_Inheritance3_super_this {
     public static void main(String[] args){
         BBB object1 = new BBB(); // 不传递参数 此时会调用class B中default constructor，其中因为是super()， 又会调用A中的default constructor
-       
-        System.out.println("");
+        System.out.println(object1);
        
         BBB object2 = new BBB(5); // 传递参数 此时会调用class B中的parameterized constructor，因为其中有super(n)，又会调用A中的parameterized constructor
-
+        System.out.println(object2);
     }
 }

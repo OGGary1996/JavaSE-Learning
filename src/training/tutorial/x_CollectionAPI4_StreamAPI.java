@@ -21,18 +21,18 @@ public class x_CollectionAPI4_StreamAPI {
         Stream<CarInfo> carsStream1 = carsGroup1.stream(); 
         // 2. 使用Stream对象的方法对集合进行操作，当前的Stream对象只能被使用一次
         // 2.1 使用.filter()方法筛选出符合条件的元素,返回另外一个Stream对象
-        Stream<CarInfo> carsStream2 = carsStream1.filter(n -> n.getYear() > 2013 );
+        Stream<CarInfo> carsStream2 = carsStream1.filter(car -> car.getYear() > 2013 );
             // .filter()方法的参数是一个Lambda表达式，这个Lambda表达式实际上是一个Predicate接口的实例
-            // Predicate<CarInfo> filter = n -> n.getYear() > 2013;
+            // Predicate<CarInfo> filter = car -> car.getYear() > 2013;
             // Stream<CarInfo> carsStream2 = carsStream1.filter(filter);
         
         // 2.2 使用.map()方法对元素进行内存地址重新引用，返回另外一个Stream对象
-        Stream<CarInfo> carsStream3 = carsStream2.map(n -> new CarInfo(n.getYear(), n.getBrand().toUpperCase()));
+        Stream<CarInfo> carsStream3 = carsStream2.map(car -> new CarInfo(car.getYear(), car.getBrand().toUpperCase()));
             // .map()方法的参数是一个Lambda表达式，这个Lambda表达式实际上是一个Function接口的实例
-            // Function<CarInfo, CarInfo> map = n -> new CarInfo(n.getYear(), n.getBrand().toUpperCase());
+            // Function<CarInfo, CarInfo> map = car -> new CarInfo(car.getYear(), car.getBrand().toUpperCase());
             // Stream<CarInfo> carsStream3 = carsStream2.map(map);
         // 2.3 使用.forEach()方法对每个元素进行操作
-        carsStream3.forEach(n -> n.print_info());
+        carsStream3.forEach(car -> car.print_info());
 
 
         //Example 2

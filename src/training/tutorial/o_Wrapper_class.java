@@ -6,7 +6,7 @@ public class o_Wrapper_class {
         // 基本数据类型和包装类之间的转换
         // 基本数据类型转换为包装类
         int a = 10;
-        Integer b = new Integer(a); // 通过构造方法，不推荐使用构造方法，因为会产生多余的对象
+        // Integer b = new Integer(a); // 通过构造方法，不推荐使用构造方法，因为会产生多余的对象
         Integer c = Integer.valueOf(a);// 显式：通过valueOf方法,是一个static方法，返回一个Integer对象
         Integer d = a; // 隐式：自动装箱 auto-boxing
 
@@ -23,5 +23,9 @@ public class o_Wrapper_class {
         int i = Integer.parseInt(str); // 通过parseInt方法，先转换为包装类 然后再隐式转换为基本数据类型
         // 基本数据类型转换为字符串
         String str2 = Integer.toString(i); // 通过toString方法，先转换为包装类 然后再调用toString方法
+
+
+        // 关闭资源
+        System.out.println("a: " + a + "\nc: " + c + "\nd: " + d + "\ne: " + e + "\nf: " + f + "\nstr: " + str + "\nh: " + h + "\ni: " + i + "\nstr2: " + str2);
     }
 }

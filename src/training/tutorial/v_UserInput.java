@@ -49,6 +49,8 @@ public class v_UserInput {
         Scanner input = new Scanner(System.in);
         System.out.println("Please input a number: ");
         int num = input.nextInt();
+        System.out.println("The number you input is: " + num);
+        input.close();
 
     }
 }

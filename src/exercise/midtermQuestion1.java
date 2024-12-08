@@ -7,5 +7,6 @@ public class midtermQuestion1 {
         double fahrenheit = scan1.nextDouble();
         double celsius = (fahrenheit - 32) * ( 5.0 / 9.0 );
         System.out.printf("%.0f degrees Fahrenheit is %.2f degrees Celsius.%n",fahrenheit,celsius);
+        scan1.close();
     }
 }

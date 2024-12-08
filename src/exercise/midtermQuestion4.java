@@ -6,6 +6,7 @@ public class midtermQuestion4 {
         System.out.println("Please input the String: ");
         String str1 = scan4.next();
         String str2 = "";
+        scan4.close();
         if (str1.length() >= 10){
             str1 = str1.toLowerCase();
             for (int i = str1.length()-1 ; i >= 0 ; i-- ){
