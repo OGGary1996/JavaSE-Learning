@@ -1,4 +1,4 @@
-package training.tutorial.exampleclass;
+package training.tutorial.exampleClass;
 
 public class Animal {
     public String animalName;

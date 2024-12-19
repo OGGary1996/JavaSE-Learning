@@ -1,5 +1,5 @@
 package training.tutorial.exampleThread;
-import training.tutorial.exampleclass.Animal;
+import training.tutorial.exampleClass.Animal;
 public class ThreadD extends Animal implements Runnable {
     
     public ThreadD(String animalName){

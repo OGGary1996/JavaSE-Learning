@@ -8,8 +8,8 @@ public class g_array1 {
 		// array中只能存储同一种数据类型
 		
 		//声明数组 1、直接给定初始化的值，2、给一个空的array，但需要指定长度
-		int nums1[] = {1,2,3,4,5,6,7};
-		int nums2[] = new int[4]; // 空的array 元素默认为0，但是长度固定为4，从0开始，0-3.
+		int[] nums1 = {1,2,3,4,5,6,7};
+		int[] nums2 = new int[4]; // 空的array 元素默认为0，但是长度固定为4，从0开始，0-3.
 		// 访问 index从0开始
 		System.out.println(nums1[0]);
 		System.out.println(nums2[3]);
@@ -35,7 +35,7 @@ public class g_array1 {
 		// multiple dimensional array
 		
 		// 声明多维数组 使用[][],第一个[]表示行，第二个[]表示列
-		int nums4[][] = new int[3][4]; // 新声明一个3行4列的多维数组，0-2;0-3.
+		int[][] nums4 = new int[3][4]; // 新声明一个3行4列的多维数组，0-2;0-3.
 		
 		// 访问
 		System.out.println(nums4[2][3]);
@@ -58,7 +58,7 @@ public class g_array1 {
 			System.out.println();
 		}
 			// enhanced for
-		for (int n[] : nums4) { // n[] 代表了提取一个多维数组中的一行数组
+		for (int[] n : nums4) { // n[] 代表了提取一个多维数组中的一行数组
 			for (int m : n) { // m 代表了 n数组 中的每一个elements
 				System.out.print(m + " "); // m 表示元素本身，通过赋值给m，直接输出结果
 			}
@@ -68,13 +68,13 @@ public class g_array1 {
 		
 		// 3D array
 		// create 
-		int nums5[][][] = new int[3][4][4];
+		int[][][] nums5 = new int[3][4][4];
 		System.out.println(nums5[0][1][2]);
 		
 		
 		// jagged array 先不指定列
 		// create 
-		int nums6[][] = new int[3][];
+		int[][] nums6 = new int[3][];
 		nums6[0] = new int[3];
 		nums6[1] = new int[4];
 		nums6[2] = new int[2];
@@ -87,7 +87,7 @@ public class g_array1 {
 			System.out.println();
 		}
 		// 遍历
-		for (int n[]:nums6) {
+		for (int[] n :nums6) {
 			for (int m:n) {
 				System.out.print(m + " ");
 			}

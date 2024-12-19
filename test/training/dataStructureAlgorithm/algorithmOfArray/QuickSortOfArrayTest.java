@@ -1,4 +1,4 @@
-package training.dataStructureAlgorithm.algorithmClass;
+package training.dataStructureAlgorithm.algorithmOfArray;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -8,7 +8,7 @@ import org.junit.jupiter.api.TestInstance;
 import static org.junit.jupiter.api.Assertions.*;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
-class quickSortOfArrayTest {
+class QuickSortOfArrayTest {
     public static int[] nums;
     public static int[] expected;
     @BeforeEach
@@ -25,7 +25,7 @@ class quickSortOfArrayTest {
 
     @Test
     void quickSort() {
-        quickSortOfArray.quickSort(nums, 0, nums.length - 1);
+        QuickSortOfArray.quickSort(nums, 0, nums.length - 1);
         assertArrayEquals(expected, nums);
     }
 }

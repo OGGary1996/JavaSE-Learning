@@ -1,4 +1,4 @@
-package training.tutorial.exampleclass;
+package training.tutorial.exampleClass;
 
 public class CarNumber {
 	public static int nums; // 声明静态变量

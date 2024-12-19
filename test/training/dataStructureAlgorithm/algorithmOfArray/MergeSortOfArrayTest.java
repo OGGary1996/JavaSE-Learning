@@ -1,4 +1,4 @@
-package training.dataStructureAlgorithm.algorithmClass;
+package training.dataStructureAlgorithm.algorithmOfArray;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -7,7 +7,7 @@ import org.junit.jupiter.api.TestInstance;
 
 import static org.junit.jupiter.api.Assertions.*;
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
-class mergeSortOfArrayTest {
+class MergeSortOfArrayTest {
     public static int[] nums;
     public static int[] expected;
 
@@ -23,7 +23,7 @@ class mergeSortOfArrayTest {
     }
     @Test
     void mergeSort() {
-        mergeSortOfArray.mergeSort(nums,0,nums.length-1);
+        MergeSortOfArray.mergeSort(nums,0,nums.length-1);
         assertArrayEquals(expected, nums);
     }
 }

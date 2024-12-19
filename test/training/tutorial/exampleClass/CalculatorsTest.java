@@ -1,7 +1,6 @@
-package training.toturial.exampleclass;
+package training.tutorial.exampleClass;
 
 import org.junit.jupiter.api.*;
-import training.tutorial.exampleclass.Calculators;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;

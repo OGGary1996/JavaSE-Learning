@@ -1,4 +1,4 @@
-package training.tutorial.exampleclass;
+package training.tutorial.exampleClass;
 
 public abstract class ShapeCal {
     protected String name; // protected修饰符，只有本类和子类可以访问

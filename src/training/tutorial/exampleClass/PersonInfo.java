@@ -1,4 +1,4 @@
-package training.tutorial.exampleclass;
+package training.tutorial.exampleClass;
 
 public class PersonInfo implements Comparable<PersonInfo> {
 	String name;

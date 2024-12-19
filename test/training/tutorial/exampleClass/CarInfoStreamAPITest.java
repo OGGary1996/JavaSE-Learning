@@ -1,8 +1,6 @@
-package training.toturial.exampleclass;
+package training.tutorial.exampleClass;
 
 import org.junit.jupiter.api.*;
-import training.tutorial.exampleclass.CarInfo;
-import training.tutorial.exampleclass.CarInfoStreamAPI;
 
 import java.time.Duration;
 import java.util.ArrayList;

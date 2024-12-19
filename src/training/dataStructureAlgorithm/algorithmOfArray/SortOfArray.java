@@ -1,6 +1,6 @@
-package training.dataStructureAlgorithm.algorithmClass;
+package training.dataStructureAlgorithm.algorithmOfArray;
 
-public class sortOfArray {
+public class SortOfArray {
 
     // Determine whether the array is sorted
     public static boolean isSorted(int[] array){

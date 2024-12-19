@@ -1,4 +1,4 @@
-package training.tutorial.exampleenum;
+package training.tutorial.exampleEnum;
 
 public enum Status {
     Running("In progress"), 

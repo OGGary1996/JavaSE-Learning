@@ -1,6 +1,6 @@
-package training.dataStructureAlgorithm.algorithmClass;
+package training.dataStructureAlgorithm.algorithmOfArray;
 
-public class searchOfArray {
+public class SearchOfArray {
     public static int step;
     // Linear Search
     public static int LinearSearch(int target, int[] array){

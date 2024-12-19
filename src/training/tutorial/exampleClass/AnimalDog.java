@@ -1,4 +1,4 @@
-package training.tutorial.exampleclass;
+package training.tutorial.exampleClass;
 
 public class AnimalDog extends Animal { // 创建child class，并继承parent class的属性和成员变量
 

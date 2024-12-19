@@ -1,7 +1,7 @@
 package training.tutorial;
 
-import training.tutorial.exampleclass.Calculators;
-import training.tutorial.exampleclass.CarInfo;
+import training.tutorial.exampleClass.Calculators;
+import training.tutorial.exampleClass.CarInfo;
 
 public class f_class_object {
 

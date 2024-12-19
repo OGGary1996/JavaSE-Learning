@@ -3,9 +3,9 @@ package training.tutorial;
 // 任何子类对象都可以被看作是其父类对象的实例，这是因为子类继承了父类的所有特性（字段和方法）。因此，可以使用父类类型的引用变量来指向子类对象。
 // single level
 
-import training.tutorial.exampleclass.Animal;
-import training.tutorial.exampleclass.AnimalCat;
-import training.tutorial.exampleclass.AnimalDog;
+import training.tutorial.exampleClass.Animal;
+import training.tutorial.exampleClass.AnimalCat;
+import training.tutorial.exampleClass.AnimalDog;
 
 public class l_Inheritance1_single_level {
     public static void main(String[] args){

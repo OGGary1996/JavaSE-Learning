@@ -5,7 +5,7 @@ package training.tutorial;
 //                         3. interface中的方法默认是public abstract的，变量默认是public static final的 
 //                         4. abstract class本质上还是属于class，不能被多重继承，但是对于interface，多个interface可以被一个类实现。
 
-import training.tutorial.exampleclass.AnimalDuck;
+import training.tutorial.exampleClass.AnimalDuck;
 
 public class r_Interface {
     public static void main(String[] args){

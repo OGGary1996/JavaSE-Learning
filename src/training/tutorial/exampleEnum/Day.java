@@ -1,4 +1,4 @@
-package training.tutorial.exampleenum;
+package training.tutorial.exampleEnum;
 // enum中的每个元素都是Day类型的对象，它们是Day类型的实例，这些实例是在Day类中定义的。
 public enum Day {
     MONDAY("Start of the work week"),

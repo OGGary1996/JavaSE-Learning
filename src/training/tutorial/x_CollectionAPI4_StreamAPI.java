@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
 
-import training.tutorial.exampleclass.CarInfo;
+import training.tutorial.exampleClass.CarInfo;
 
 // Stream API: 用于对集合进行复杂的操作，如筛选、排序、过滤等。
 public class x_CollectionAPI4_StreamAPI {

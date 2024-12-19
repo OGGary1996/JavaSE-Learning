@@ -1,6 +1,6 @@
-package training.dataStructureAlgorithm.algorithmClass;
+package training.dataStructureAlgorithm.algorithmOfArray;
 
-public class quickSortOfArray extends sortOfArray{
+public class QuickSortOfArray extends SortOfArray {
     // Quick sort - main function
     public static void quickSort(int[] array, int low, int high){
         if (low < high) {

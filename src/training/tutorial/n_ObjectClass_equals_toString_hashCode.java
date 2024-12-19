@@ -3,7 +3,7 @@ package training.tutorial;
 // 在创建class时，java会默认加上隐式的继承 class class_name extends Object
 // 这也是为什么在一个class中 就算没有创建方法，也可以直接使用Object的方法
 
-import training.tutorial.exampleclass.Animal;
+import training.tutorial.exampleClass.Animal;
 
 
 public class n_ObjectClass_equals_toString_hashCode extends Object { // 可以将隐式继承写出来
@@ -12,7 +12,7 @@ public class n_ObjectClass_equals_toString_hashCode extends Object { // 可以�
     //  如果打印一个object本身，java会默认加上隐式的toString()方法
     Animal animal1 = new Animal("");
     System.out.println(animal1);
-    System.out.println(animal1.toString()); // 返回的结果一致 training.exampleclass.Animal@2dda6444
+    System.out.println(animal1.toString()); // 返回的结果一致 training.algorithmOfArray.Animal@2dda6444
     /*  public String toString() {
         return getClass().getName() + "@" + Integer.toHexString(hashCode());
     } */

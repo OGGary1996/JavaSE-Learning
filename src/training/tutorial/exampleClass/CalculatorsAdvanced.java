@@ -1,4 +1,4 @@
-package training.tutorial.exampleclass;
+package training.tutorial.exampleClass;
 
 public class CalculatorsAdvanced extends Calculators { // 创建child class（同时为了保留原始的parent class，并且child class不用再次重写代码）
     public int mod(int num1, int num2){ // 扩展parent class 的方法

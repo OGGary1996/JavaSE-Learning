@@ -1,4 +1,4 @@
-package training.tutorial.exampleclass;
+package training.tutorial.exampleClass;
 import java.util.Scanner;
 public class Classroom {
     private int studentCount;

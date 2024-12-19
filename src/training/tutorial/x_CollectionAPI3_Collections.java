@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-import training.tutorial.exampleclass.PersonInfo;
+import training.tutorial.exampleClass.PersonInfo;
 
 // 使用Collections类中的方法
 // Collections 类是一个包装类，它包含有各种有关集合操作的静态方法。

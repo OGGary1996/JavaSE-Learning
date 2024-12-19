@@ -1,9 +1,9 @@
 package training.dataStructureAlgorithm.operationOfLinkedList;
 
-public class LinkedList {
-    static class Node{
-        int data;
-        Node next;
+public class LinkedListManual {
+    private class Node{
+        private int data;
+        private Node next;
     }
     Node head;
 
@@ -89,10 +89,22 @@ public class LinkedList {
     public void show(){
         Node n = head;
         while(n.next != null){
-            System.out.println(n.data + " ");
+            System.out.print(n.data + " ");
             n = n.next;
         }
-        System.out.println(n.data);
+        System.out.print(n.data);
+        System.out.println();
     }
 
+    public void reverseList(){
+        Node prevNode = null;
+        Node currentNode = head;
+        while (currentNode != null){
+            Node nextNode = currentNode.next;
+            currentNode.next = prevNode;
+            prevNode = currentNode;
+            currentNode = nextNode;
+        }
+        head = prevNode;
+    }
 }

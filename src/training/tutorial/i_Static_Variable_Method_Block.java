@@ -1,6 +1,6 @@
 package training.tutorial;
 
-import training.tutorial.exampleclass.CarNumber;
+import training.tutorial.exampleClass.CarNumber;
 
 public class i_Static_Variable_Method_Block {
 

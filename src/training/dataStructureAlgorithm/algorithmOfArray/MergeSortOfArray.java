@@ -1,6 +1,6 @@
-package training.dataStructureAlgorithm.algorithmClass;
+package training.dataStructureAlgorithm.algorithmOfArray;
 
-public class mergeSortOfArray {
+public class MergeSortOfArray {
     public static void mergeSort(int[] array,int left, int right){
         if (left < right){
             int mid = (left + right) / 2;

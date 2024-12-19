@@ -1,11 +1,11 @@
-package training.dataStructureAlgorithm.algorithmClass;
+package training.dataStructureAlgorithm.algorithmOfArray;
 
 import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class) // 指定测试方法执行顺序
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
-class sortOfArrayTest {
+class SortOfArrayTest {
 
     public int[] nums;
     public int[] expected;
@@ -25,27 +25,27 @@ class sortOfArrayTest {
     @Test
     @Order(1)
     void isSorted() {
-        assertFalse(sortOfArray.isSorted(nums)); // if the array is not sorted, return false, test pass
+        assertFalse(SortOfArray.isSorted(nums)); // if the array is not sorted, return false, test pass
     }
 
     @Test
     @Order(2)
     void bobbleSort() {
-        sortOfArray.bobbleSort(nums);
+        SortOfArray.bobbleSort(nums);
         assertArrayEquals(expected, nums);
     }
 
     @Test
     @Order(3)
     void selectionSort() {
-        sortOfArray.selectionSort(nums);
+        SortOfArray.selectionSort(nums);
         assertArrayEquals(expected, nums);
     }
 
     @Test
     @Order(4)
     void insertionSort() {
-        sortOfArray.insertionSort(nums);
+        SortOfArray.insertionSort(nums);
         assertArrayEquals(expected, nums);
     }
 }

@@ -4,9 +4,9 @@ package training.tutorial;
 // 如果要声明一个函数式接口，需要使用@FunctionalInterface注解
 // 如果不使用Lambda表达式，可以使用匿名内部类来实现函数式接口，但是这样代码会显得冗余
 
-import training.tutorial.exampleinterface.Show;
-import training.tutorial.exampleinterface.ShowWIthParameter;
-import training.tutorial.exampleinterface.Add;
+import training.tutorial.exampleInterface.Show;
+import training.tutorial.exampleInterface.ShowWIthParameter;
+import training.tutorial.exampleInterface.Add;
 
 public class t_FunctionalInterface_LambdaExpression {
     public static void main(String[] args){

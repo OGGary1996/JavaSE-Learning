@@ -1,4 +1,4 @@
-package training.tutorial.exampleclass;
+package training.tutorial.exampleClass;
 
 public abstract class Vehicle { // 创建抽象类作为一个外部类
     protected String name;
