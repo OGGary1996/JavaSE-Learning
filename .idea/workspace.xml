@@ -5,90 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b01aa931-e8f8-4182-b9cc-275f85e80fb9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/training/dataStructureAlgorithm/algorithmOfArray/MergeSortOfArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/training/dataStructureAlgorithm/algorithmOfArray/QuickSortOfArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/training/dataStructureAlgorithm/algorithmOfArray/SearchOfArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/training/dataStructureAlgorithm/algorithmOfArray/SortOfArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/training/dataStructureAlgorithm/h_OperationOfLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/training/dataStructureAlgorithm/i_OperationOfStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/training/dataStructureAlgorithm/j_OperationOfDynamicStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/training/dataStructureAlgorithm/k_OperartionOfQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/training/dataStructureAlgorithm/l_OperationOfCircleQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/training/dataStructureAlgorithm/m_OperationOfBinarySearchTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/training/dataStructureAlgorithm/operarionOfQueue/CircleQueueManual.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/training/dataStructureAlgorithm/operarionOfQueue/QueueManual.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/training/dataStructureAlgorithm/operationOfLinkedList/LinkedListManual.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/training/dataStructureAlgorithm/operationOfStack/DynamicStackManual.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/training/dataStructureAlgorithm/operationOfStack/StackManual.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/training/dataStructureAlgorithm/operationOfTree/BinarySearchTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/training/dataStructureAlgorithm/algorithmOfArray/MergeSortOfArrayTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/training/dataStructureAlgorithm/algorithmOfArray/QuickSortOfArrayTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/training/dataStructureAlgorithm/algorithmOfArray/SortOfArrayTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training/dataStructureAlgorithm/a_LinearSearchOfArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/training/dataStructureAlgorithm/a_LinearSearchOfArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training/dataStructureAlgorithm/b_BinarySearchOfArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/training/dataStructureAlgorithm/b_BinarySearchOfArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training/dataStructureAlgorithm/c_bobbleSortOfArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/training/dataStructureAlgorithm/c_BobbleSortOfArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training/dataStructureAlgorithm/d_selectionSortOfArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/training/dataStructureAlgorithm/d_SelectionSortOfArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training/dataStructureAlgorithm/e_insertionSortOfArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/training/dataStructureAlgorithm/e_InsertionSortOfArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training/dataStructureAlgorithm/exampleclass/mergeSortOfArray.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training/dataStructureAlgorithm/exampleclass/quickSortOfArray.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training/dataStructureAlgorithm/exampleclass/searchOfArray.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training/dataStructureAlgorithm/exampleclass/sortOfArray.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training/dataStructureAlgorithm/f_quickSortOfArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/training/dataStructureAlgorithm/f_QuickSortOfArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training/dataStructureAlgorithm/g_mergeSortOfArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/training/dataStructureAlgorithm/g_MergeSortOfArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training/tutorial/exampleThread/ThreadC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/training/tutorial/exampleThread/ThreadC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training/tutorial/exampleThread/ThreadD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/training/tutorial/exampleThread/ThreadD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training/tutorial/exampleclass/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/training/tutorial/exampleClass/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training/tutorial/exampleclass/AnimalCat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/training/tutorial/exampleClass/AnimalCat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training/tutorial/exampleclass/AnimalDog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/training/tutorial/exampleClass/AnimalDog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training/tutorial/exampleclass/AnimalDuck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/training/tutorial/exampleClass/AnimalDuck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training/tutorial/exampleclass/Calculators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/training/tutorial/exampleClass/Calculators.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training/tutorial/exampleclass/CalculatorsAdvanced.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/training/tutorial/exampleClass/CalculatorsAdvanced.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training/tutorial/exampleclass/CalculatorsFinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/training/tutorial/exampleClass/CalculatorsFinal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training/tutorial/exampleclass/CarInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/training/tutorial/exampleClass/CarInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training/tutorial/exampleclass/CarInfoStreamAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/training/tutorial/exampleClass/CarInfoStreamAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training/tutorial/exampleclass/CarNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/training/tutorial/exampleClass/CarNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training/tutorial/exampleclass/Classroom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/training/tutorial/exampleClass/Classroom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training/tutorial/exampleclass/PersonInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/training/tutorial/exampleClass/PersonInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training/tutorial/exampleclass/PersonalInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/training/tutorial/exampleClass/PersonalInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training/tutorial/exampleclass/ShapeCal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/training/tutorial/exampleClass/ShapeCal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training/tutorial/exampleclass/ShapeCircle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/training/tutorial/exampleClass/ShapeCircle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training/tutorial/exampleclass/ShapeRectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/training/tutorial/exampleClass/ShapeRectangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training/tutorial/exampleclass/StudentsInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/training/tutorial/exampleClass/StudentsInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training/tutorial/exampleclass/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/training/tutorial/exampleClass/Vehicle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training/tutorial/exampleenum/Day.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/training/tutorial/exampleEnum/Day.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training/tutorial/exampleenum/Status.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/training/tutorial/exampleEnum/Status.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training/tutorial/exampleinterface/Add.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/training/tutorial/exampleInterface/Add.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training/tutorial/exampleinterface/Flyable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/training/tutorial/exampleInterface/Flyable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training/tutorial/exampleinterface/Show.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/training/tutorial/exampleInterface/Show.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training/tutorial/exampleinterface/ShowWIthParameter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/training/tutorial/exampleInterface/ShowWIthParameter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training/tutorial/exampleinterface/Swimmable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/training/tutorial/exampleInterface/Swimmable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training/tutorial/f_class_object.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/training/tutorial/f_class_object.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training/tutorial/g_array1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/training/tutorial/g_array1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training/tutorial/g_array2_objects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/training/tutorial/g_array2_objects.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training/tutorial/i_Static_Variable_Method_Block.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/training/tutorial/i_Static_Variable_Method_Block.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training/tutorial/j_Encapsulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/training/tutorial/j_Encapsulation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training/tutorial/l_Inheritance1_single_level.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/training/tutorial/l_Inheritance1_single_level.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training/tutorial/l_Inheritance2_multi_level.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/training/tutorial/l_Inheritance2_multi_level.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training/tutorial/l_Polymorphism1_DynamicMethodDispatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/training/tutorial/l_Polymorphism1_DynamicMethodDispatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training/tutorial/l_Polymorphism2_Downcasting_Upcasting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/training/tutorial/l_Polymorphism2_Downcasting_Upcasting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training/tutorial/n_ObjectClass_equals_toString_hashCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/training/tutorial/n_ObjectClass_equals_toString_hashCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training/tutorial/p_Abstract_key_word.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/training/tutorial/p_Abstract_key_word.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training/tutorial/q_Innerclass1_Anonymous.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/training/tutorial/q_Innerclass1_Anonymous.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training/tutorial/q_Innerclass2_Menber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/training/tutorial/q_Innerclass2_Menber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training/tutorial/r_Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/training/tutorial/r_Interface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training/tutorial/s_Enum1_Day.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/training/tutorial/s_Enum1_Day.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training/tutorial/s_Enum2_Status.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/training/tutorial/s_Enum2_Status.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training/tutorial/t_FunctionalInterface_LambdaExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/training/tutorial/t_FunctionalInterface_LambdaExpression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training/tutorial/x_CollectionAPI1_Collection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/training/tutorial/x_CollectionAPI1_Collection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training/tutorial/x_CollectionAPI3_Collections.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/training/tutorial/x_CollectionAPI3_Collections.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training/tutorial/x_CollectionAPI4_StreamAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/training/tutorial/x_CollectionAPI4_StreamAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/training/dataStructureAlgorithm/exampleclass/quickSortOfArrayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/training/dataStructureAlgorithm/operationOfLinkedList/LinkedListManualTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/training/dataStructureAlgorithm/exampleclass/sortOfArrayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/training/dataStructureAlgorithm/operationOfStack/StackManualTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/training/tutorial/exampleclass/CalculatorsAdvancedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/training/tutorial/exampleClass/CalculatorsAdvancedTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/training/tutorial/exampleclass/CalculatorsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/training/tutorial/exampleClass/CalculatorsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/training/tutorial/exampleclass/CarInfoStreamAPITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/training/tutorial/exampleClass/CarInfoStreamAPITest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exercise/Get_Set_BankAccount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exercise/exampleClass/BankAccount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exercise/midtermQuestion1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exercise/midtermQuestion2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exercise/midtermQuestion3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exercise/midtermQuestion4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/training/dataStructureAlgorithm/c_BobbleSortOfArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/training/dataStructureAlgorithm/c_BobbleSortOfArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/training/dataStructureAlgorithm/d_SelectionSortOfArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/training/dataStructureAlgorithm/d_SelectionSortOfArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/training/dataStructureAlgorithm/e_InsertionSortOfArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/training/dataStructureAlgorithm/e_InsertionSortOfArray.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,6 +61,7 @@
     "Application.b_BinarySearchOfArray.executor": "Run",
     "Application.c_bobbleSortOfArray.executor": "Run",
     "Application.d_selectionSortOfArray.executor": "Run",
+    "Application.e_InsertionSortOfArray.executor": "Run",
     "Application.e_insertionSortOfArray.executor": "Debug",
     "Application.f_quickSortOfArray.executor": "Coverage",
     "Application.g_mergeSortOfArray.executor": "Run",
@@ -183,7 +110,7 @@
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.33370167",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "preferences.general",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -244,7 +171,8 @@
       <workItem from="1734369339085" duration="22209000" />
       <workItem from="1734454133718" duration="15143000" />
       <workItem from="1734485956175" duration="1631000" />
-      <workItem from="1734538954333" duration="22106000" />
+      <workItem from="1734538954333" duration="22930000" />
+      <workItem from="1734626057095" duration="7030000" />
     </task>
     <servers />
   </component>
