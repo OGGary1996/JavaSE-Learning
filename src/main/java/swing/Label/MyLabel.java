@@ -4,6 +4,7 @@ import javax.swing.*;
 import javax.swing.border.Border;
 import java.awt.*;
 
+// 通过继承JLabel类，实现自定义标签
 public class MyLabel extends JLabel {
     public MyLabel(){
         // set the text of the label

@@ -1,4 +1,4 @@
-package swing.JFrame;
+package swing.Frame;
 
 import javax.swing.*;
 import java.awt.*;
@@ -9,6 +9,9 @@ public class MyFrame extends JFrame {
         this.setTitle("MyFrame Example");
 
         this.setSize(500, 500);
+
+        // 设置自动调整窗口大小，根据组件大小自动调整窗口大小，不需要设置setSize
+        // this.pack();
 
         this.setVisible(true);
 
@@ -21,9 +24,11 @@ public class MyFrame extends JFrame {
         Color newColor = new Color(123, 50, 250);
         this.getContentPane().setBackground(newColor);
 
-        Image appIcon = Toolkit.getDefaultToolkit().getImage("src/main/resources/pic1.png");
+        Image appIcon = Toolkit.getDefaultToolkit().getImage("src/main/resources/pic4.png");
         Taskbar.getTaskbar().setIconImage(appIcon);
 
         this.setLayout(null);
+
+
     }
 }

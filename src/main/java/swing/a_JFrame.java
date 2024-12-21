@@ -3,7 +3,6 @@ import javax.swing.*;
 import java.awt.*;
 
 // 通过直接在Main方法中创建JFrame对象，可以快速创建窗口
-
 public class a_JFrame {
     public static void main(String[] args){
         // Create a frame
@@ -15,16 +14,16 @@ public class a_JFrame {
         // Set the frame size
         frame.setSize(800, 800); // width, height
 
-        // Make the frame visible
-        frame.setVisible(true);
+        // 设置自动调整窗口大小，根据组件大小自动调整窗口大小，不需要设置setSize
+        // this.pack();
 
         // 默认情况下关闭窗口时，程序不会退出，只是隐藏窗口
-        // frame.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
+        // frame.setDefaultCloseOperation(Frame.HIDE_ON_CLOSE);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         // 设置是否可以手动调节窗口大小
             // 默认情况下为true
-        frame.setResizable(false);
+        //frame.setResizable(false);
 
         // 设置窗口左上角的图标
             // 默认情况下为null
@@ -49,5 +48,7 @@ public class a_JFrame {
         Color newColor = new Color(50, 50, 50);
         frame.getContentPane().setBackground(newColor);
 
+        // Make the frame visible
+        frame.setVisible(true);
     }
 }
