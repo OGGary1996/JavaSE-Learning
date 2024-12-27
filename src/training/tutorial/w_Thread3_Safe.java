@@ -49,7 +49,7 @@ public class w_Thread3_Safe {
             }
         };
         Thread t3 = new Thread(c);
-        t3.run();
+        t3.start();
 
         Runnable d = () -> {
             for (int i = 0; i <= 1000; i++){
@@ -57,7 +57,7 @@ public class w_Thread3_Safe {
             }
         };
         Thread t4 = new Thread(d);
-        t4.run();
+        t4.start();
 
         System.out.println(counter2.getCount());
 

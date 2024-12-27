@@ -1,6 +1,6 @@
 package training.tutorial;
 // 之前的方法中，我们使用了extends Thread来创建线程，还有一种方法是实现Runnable接口。
-// 由于使用了impliemnets Runnable，我们无法再使用.start()方法，因为这个方法属于Thread类。
+// 由于使用了implements Runnable，我们无法再使用.start()方法，因为这个方法属于Thread类。
 // 可以先创建一个Thread的实例，然后将Runnable的实例传递给Thread的constructor，然后再调用.start()方法。
 import training.tutorial.exampleThread.ThreadC;
 import training.tutorial.exampleThread.ThreadD;
@@ -20,7 +20,7 @@ public class w_Thread2_Runnable {
         System.out.println(t2.getPriority()); // 5
 
 
-        // 通过Anonymous innerclass & lambda表达式创建线程，也就是不用创建一个新的类，直接在main方法中创建线程
+        // 通过Anonymous inner class & lambda表达式创建线程，也就是不用创建一个新的类，直接在main方法中创建线程
         Runnable e = new Runnable() {
             @Override
             public void run() {
