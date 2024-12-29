@@ -4,11 +4,11 @@ import javax.swing.*;
 import java.awt.*;
 
 // 通过在main方法中创建一个JPanel对象，来展示如何使用JPanel类
-public class c_JPanel {
+public class d_JPanel {
     public static void main(String[] args){
         // Create JFrame
         JFrame frame = new JFrame();
-        frame.setTitle("c_JPanel Example");
+        frame.setTitle("d_JPanel Example");
         frame.setSize(750, 750);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.getContentPane().setBackground(Color.BLACK);
@@ -35,7 +35,7 @@ public class c_JPanel {
         // Create components like labels
         JLabel label = new JLabel();
         label.setText("Oh, hi there!");
-        ImageIcon icon = new ImageIcon("src/main/resources/pic3.png");
+        ImageIcon icon = new ImageIcon("src/main/resources/BrainBoom.png");
         label.setIcon(icon);
         label.setHorizontalTextPosition(JLabel.CENTER);
         label.setVerticalTextPosition(JLabel.TOP);

@@ -4,13 +4,13 @@ import javax.swing.*;
 import java.awt.*;
 
 // 通过在main方法中创建一个JButton对象，来展示如何使用JButton类
-public class d_JButton {
+public class c_JButton {
     public static void main(String[] args){
         // create a frame
         JFrame frame = new JFrame();
         frame.setLayout(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setTitle("d_JButton Example");
+        frame.setTitle("c_JButton Example");
         frame.setSize(500, 500);
         frame.getContentPane().setBackground(Color.BLACK);
 
@@ -18,7 +18,7 @@ public class d_JButton {
         JLabel label = new JLabel();
         label.setBounds(150, 200, 200, 200);
         label.setText("Hello!");
-        ImageIcon image = new ImageIcon("src/main/resources/pic2.png");
+        ImageIcon image = new ImageIcon("src/main/resources/HappyFace.png");
         label.setIcon(image);
         label.setHorizontalTextPosition(JLabel.CENTER);
         label.setVerticalTextPosition(JLabel.BOTTOM);
@@ -39,7 +39,7 @@ public class d_JButton {
         button.setFocusable(false);
 
         // add a icon to button
-        ImageIcon icon = new ImageIcon("src/main/resources/pic4.png");
+        ImageIcon icon = new ImageIcon("src/main/resources/Pony.png");
         button.setIcon(icon);
         // 调整icon和文字的相对位置
         button.setHorizontalTextPosition(JButton.CENTER);

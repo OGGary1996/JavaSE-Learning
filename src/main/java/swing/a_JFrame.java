@@ -28,13 +28,13 @@ public class a_JFrame {
         // 设置窗口左上角的图标
             // 默认情况下为null
             // step1. 创建ImageIcon对象
-        ImageIcon logo = new ImageIcon("src/main/resources/pic4.png");
+        ImageIcon logo = new ImageIcon("src/main/resources/Pony.png");
             // step2. 设置图标
         frame.setIconImage(logo.getImage());
 
         // 修改App图标
             //step1. 创建Image对象
-        Image image = Toolkit.getDefaultToolkit().getImage("src/main/resources/pic4.png");
+        Image image = Toolkit.getDefaultToolkit().getImage("src/main/resources/Pony.png");
             //step2. 设置图标
         Taskbar.getTaskbar().setIconImage(image);
 

@@ -1,4 +1,4 @@
-package swing.Frame;
+package swing.AppExample;
 
 import javax.swing.*;
 import java.awt.*;
@@ -24,7 +24,7 @@ public class MyFrame extends JFrame {
         Color newColor = new Color(123, 50, 250);
         this.getContentPane().setBackground(newColor);
 
-        Image appIcon = Toolkit.getDefaultToolkit().getImage("src/main/resources/pic4.png");
+        Image appIcon = Toolkit.getDefaultToolkit().getImage("src/main/resources/Pony.png");
         Taskbar.getTaskbar().setIconImage(appIcon);
 
         this.setLayout(null);

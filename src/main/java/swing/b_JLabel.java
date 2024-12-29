@@ -21,7 +21,7 @@ public class b_JLabel {
         // 设置label的文本
         label.setText("Bro, do you even code?");
         // 设置图标/图标
-        ImageIcon icon = new ImageIcon("src/main/resources/pic1.png");
+        ImageIcon icon = new ImageIcon("src/main/resources/Panic.png");
         label.setIcon(icon);
         // 调整文本与图像的相对位置
         label.setHorizontalTextPosition(JLabel.CENTER); // 将文本放置在图像的中心/右侧/左侧

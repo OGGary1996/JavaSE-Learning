@@ -1,4 +1,4 @@
-package swing.Label;
+package swing.AppExample;
 
 import javax.swing.*;
 import javax.swing.border.Border;
@@ -10,7 +10,7 @@ public class MyLabel extends JLabel {
         // set the text of the label
         this.setText("Bro, do you even code?");
         // set the icon of the label
-        ImageIcon icon = new ImageIcon("src/main/resources/pic1.png");
+        ImageIcon icon = new ImageIcon("src/main/resources/Panic.png");
         this.setIcon(icon);
         // set the horizontal text positions
         this.setHorizontalTextPosition(JLabel.CENTER);

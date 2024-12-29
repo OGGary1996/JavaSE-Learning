@@ -1,10 +1,4 @@
-package swing.App;
-
-import swing.Button.MyButton1;
-import swing.Button.MyButton2;
-import swing.Frame.MyFrame;
-import swing.Label.MyLabel;
-import swing.Panel.MyPanel;
+package swing.AppExample;
 
 public class App {
     public static void main(String[] args){

@@ -1,4 +1,4 @@
-package swing.Button;
+package swing.AppExample;
 
 import javax.swing.*;
 
