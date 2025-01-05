@@ -17,7 +17,7 @@ class Counter4 {
     }
 }
 
-public class e_4Lock {
+public class e4_Lock {
     public static void main(String[] args) {
         Counter4 counter = new Counter4();
         Thread thread1 = new Thread(() -> {

@@ -19,7 +19,7 @@ class Counter {
     }
 }
 
-public class e_1synchronizedMethod {
+public class e1_synchronizedMethod {
     public static void main(String[] args) {
         Counter counter = new Counter();
         // example: 不使用synchronized关键字同步

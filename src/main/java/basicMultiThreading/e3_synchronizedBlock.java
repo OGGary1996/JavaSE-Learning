@@ -21,7 +21,7 @@ class Counter3{
     }
 }
 
-public class e_3synchronizedBlock {
+public class e3_synchronizedBlock {
     public static void main(String[] args) {
         Counter3 counter = new Counter3();
         Thread thread1 = new Thread(() -> {

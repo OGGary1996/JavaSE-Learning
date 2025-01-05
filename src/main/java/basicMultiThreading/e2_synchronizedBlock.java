@@ -20,7 +20,7 @@ class Counter2 {
     }
 }
 
-public class e_2synchronizedBlock {
+public class e2_synchronizedBlock {
     public static void main(String[] args) {
         Counter2 counter = new Counter2();
         Thread thread1 = new Thread(() -> {

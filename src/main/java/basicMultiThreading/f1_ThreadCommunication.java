@@ -1,6 +1,6 @@
 package basicMultiThreading;
 
-class Resource {
+class Resource1 {
     private int value = 0;
     private boolean produced = false;
 
@@ -23,9 +23,9 @@ class Resource {
     }
 }
 
-public class f_ThreadCommunication {
+public class f1_ThreadCommunication {
     public static void main(String[] args) {
-        Resource resource = new Resource();
+        Resource1 resource = new Resource1();
         Thread threadProduce = new Thread(() -> {
             try{
                 for (int i = 0 ; i < 10 ; i++){
