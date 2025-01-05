@@ -1,4 +1,4 @@
-package basicMultiThreading;
+package a_basicMultiThreading;
 
 // 创建线程的第一种方法：继承Thread类，或者直接创建Thread的匿名子类
 class Thread1 extends Thread{

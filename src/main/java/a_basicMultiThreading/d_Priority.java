@@ -1,4 +1,4 @@
-package basicMultiThreading;
+package a_basicMultiThreading;
 
 public class d_Priority {
     public static void main(String[] args){

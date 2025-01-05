@@ -1,4 +1,4 @@
-package basicMultiThreading;
+package a_basicMultiThreading;
 
 class Resource1 {
     private int value = 0;

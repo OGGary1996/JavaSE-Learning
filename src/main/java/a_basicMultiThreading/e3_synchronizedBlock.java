@@ -1,4 +1,4 @@
-package basicMultiThreading;
+package a_basicMultiThreading;
 
 class Counter3{
     private int count1 = 0;

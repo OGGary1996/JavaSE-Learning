@@ -1,4 +1,4 @@
-package basicMultiThreading;
+package a_basicMultiThreading;
 
 public class c_DaemonUserThread {
     public static void main(String[] args){

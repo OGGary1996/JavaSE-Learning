@@ -1,4 +1,4 @@
-package executorService;
+package b_executorService;
 // 本例采用在main class内部创建runnable接口的方式
 
 import java.util.concurrent.ExecutorService;

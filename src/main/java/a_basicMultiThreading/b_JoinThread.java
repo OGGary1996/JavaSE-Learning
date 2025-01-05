@@ -1,4 +1,4 @@
-package basicMultiThreading;
+package a_basicMultiThreading;
 
 public class b_JoinThread {
     public static void main(String[] args) throws InterruptedException {
