@@ -34,14 +34,13 @@ public class d_ScheduledExecutor {
         // shut down the executor
             // give the executor 20 seconds to complete all tasks, after 20 sec, forcefully shutdown
             // executor.awaitTermination();方法返回值是boolean，如果线程池在指定时间内完成了关闭，则返回true，否则返回false
+        executor.shutdown();
         try{
             if (!executor.awaitTermination(20, TimeUnit.SECONDS)){
-                executor.shutdown();
+                executor.shutdownNow();
             }
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
-        }finally {
-            executor.shutdown();
         }
     }
 }

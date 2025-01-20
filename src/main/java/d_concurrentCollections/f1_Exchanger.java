@@ -39,9 +39,10 @@ public class f1_Exchanger {
         });
 
         // shut down the executor
+        executor.shutdown();
         try{
             if (!executor.awaitTermination(10, TimeUnit.SECONDS)){
-                executor.shutdown();
+                executor.shutdownNow();
             }
         } catch (InterruptedException e) {
             throw new RuntimeException(e);

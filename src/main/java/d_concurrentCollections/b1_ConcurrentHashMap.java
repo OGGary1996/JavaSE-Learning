@@ -23,14 +23,13 @@ public class b1_ConcurrentHashMap {
         }
 
         // wait all the task to be done then shut down the executor
+        executor.shutdown();
         try{
             if(!executor.awaitTermination(10, TimeUnit.SECONDS)){
                 executor.shutdownNow();
             }
         }catch(InterruptedException e){
             throw new RuntimeException(e);
-        }finally {
-            executor.shutdown();
         }
 
         // print the map

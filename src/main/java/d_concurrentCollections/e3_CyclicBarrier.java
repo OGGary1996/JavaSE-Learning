@@ -34,9 +34,10 @@ public class e3_CyclicBarrier {
         }
 
         // shut down the executor after 10 seconds
+        executor.shutdown();
         try{
             if (!executor.awaitTermination(10, TimeUnit.SECONDS)){
-                executor.shutdown();
+                executor.shutdownNow();
             }
         }catch(InterruptedException e){
             throw new RuntimeException(e);
