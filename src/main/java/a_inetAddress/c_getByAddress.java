@@ -1,4 +1,4 @@
-package inetAddress;
+package a_inetAddress;
 
 // 本例子介绍 InetAddress 类的中根据 IP 地址获取 IP 地址和名称
 

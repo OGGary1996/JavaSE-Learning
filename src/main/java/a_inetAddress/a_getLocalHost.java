@@ -1,4 +1,4 @@
-package inetAddress;
+package a_inetAddress;
 
 // 本例子主要介绍 InetAddress 类的基本使用
 // InetAddress 类是 Java 网络编程的基础类，用于表示 IP 地址

@@ -1,10 +1,9 @@
-package inetAddress;
+package a_inetAddress;
 
 // 本例子介绍 InetAddress 类的中的isReachable方法
 
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.InetAddress;
 
