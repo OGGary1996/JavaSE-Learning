@@ -1,4 +1,4 @@
-package b3_socket_file;
+package b3_TCP_file;
 
 import java.io.*;
 import java.net.InetAddress;

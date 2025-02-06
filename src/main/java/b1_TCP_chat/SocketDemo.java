@@ -1,4 +1,4 @@
-package b1_socket_chat;
+package b1_TCP_chat;
 
 // 本例子演示如何创建一个简单的Socket客户端
 // 并且发送消息给服务器

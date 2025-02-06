@@ -1,4 +1,4 @@
-package b2_socket_multiChat;
+package b2_TCP_multiChat;
 
 import java.io.*;
 import java.net.InetAddress;

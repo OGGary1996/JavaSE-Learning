@@ -1,4 +1,4 @@
-package b1_socket_chat;
+package b1_TCP_chat;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;

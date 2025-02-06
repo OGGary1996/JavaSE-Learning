@@ -1,7 +1,4 @@
-package b2_socket_multiChat;
-
-import b1_socket_chat.ServerSocketDemo;
-import b1_socket_chat.SocketDemo;
+package b2_TCP_multiChat;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
