@@ -1,4 +1,4 @@
-package a_build_inAnnotation;
+package Annodation.a_build_inAnnotation;
 
 class test02{
     @Deprecated // This annotation indicates that the method is deprecated now

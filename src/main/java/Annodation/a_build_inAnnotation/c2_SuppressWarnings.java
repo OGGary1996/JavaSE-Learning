@@ -1,4 +1,4 @@
-package a_build_inAnnotation;
+package Annodation.a_build_inAnnotation;
 
 class test03{
     @Deprecated
