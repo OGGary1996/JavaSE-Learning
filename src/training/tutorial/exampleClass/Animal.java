@@ -12,7 +12,7 @@ public class Animal {
     }
 
     public void sound(){
-        System.out.println("Animal makes a sund.");
+        System.out.println("Animal is making a sound.");
     }
     public void sleep(){
         System.out.println("Animal is sleeping.");

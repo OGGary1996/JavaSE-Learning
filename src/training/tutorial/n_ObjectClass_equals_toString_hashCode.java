@@ -12,7 +12,7 @@ public class n_ObjectClass_equals_toString_hashCode extends Object { // 可以�
     //  如果打印一个object本身，java会默认加上隐式的toString()方法
     Animal animal1 = new Animal("");
     System.out.println(animal1);
-    System.out.println(animal1.toString()); // 返回的结果一致 training.algorithmOfArray.Animal@2dda6444
+    System.out.println(animal1.toString()); // 返回的结果一致 training.algorithmOfArray.Employee@2dda6444
     /*  public String toString() {
         return getClass().getName() + "@" + Integer.toHexString(hashCode());
     } */
