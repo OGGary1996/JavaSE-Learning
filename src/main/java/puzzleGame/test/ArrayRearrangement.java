@@ -1,6 +1,6 @@
 package puzzleGame.test;
 
-public class Test {
+public class ArrayRearrangement {
     public static void main(String[] args) {
         // 把一位数组中的数据0-15顺序打乱，然后按照4个一组放入二维数组中
         int[] tempArr = {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15};
