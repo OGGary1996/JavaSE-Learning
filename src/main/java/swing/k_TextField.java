@@ -13,7 +13,7 @@ public class k_TextField {
         frame.setLayout(new BorderLayout());
 
         // create a button
-        JButton button = new JButton("Register");
+        JButton button = new JButton("RegisterFrame");
         button.setPreferredSize(new Dimension(100, 50));
 
         // create a text field
