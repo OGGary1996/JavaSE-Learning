@@ -36,3 +36,8 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+### Project Specific ###
+# Exclude practice/exercise folders
+src/main/java/swing/
+src/main/resources/exercise/

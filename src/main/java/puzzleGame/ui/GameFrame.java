@@ -1,7 +1,5 @@
 package puzzleGame.ui;
 
-import org.w3c.dom.ls.LSOutput;
-
 import javax.swing.*;
 import javax.swing.border.BevelBorder;
 import java.awt.event.ActionEvent;
@@ -13,7 +11,6 @@ public class GameFrame extends JFrame implements KeyListener, ActionListener {
     // 设置JMenuItem
     JMenuItem changePic = new JMenuItem("Change Picture");
     JMenuItem restart = new JMenuItem("Restart");
-    JMenuItem reLogin = new JMenuItem("Re-login");
     JMenuItem close = new JMenuItem("Close");
     JMenuItem author = new JMenuItem("Author");
 
@@ -30,7 +27,7 @@ public class GameFrame extends JFrame implements KeyListener, ActionListener {
     int x;
     int y;
     // 定义图像的路径
-    String imagePath = "src/main/resources/puzzleGame/animal/animal1/";
+    String imagePath = "src/main/resources/puzzleGame/gameImage/animal1/";
     // 计步器
     int step = 0;
 
@@ -62,7 +59,6 @@ public class GameFrame extends JFrame implements KeyListener, ActionListener {
         this.setLocationRelativeTo(null);
         // 取消默认的布局方式
         this.setLayout(null);
-
         // 在全局设置键盘监听器
         this.addKeyListener(this);
     }
@@ -77,7 +73,6 @@ public class GameFrame extends JFrame implements KeyListener, ActionListener {
         // 设置层级添加
         function.add(changePic);
         function.add(restart);
-        function.add(reLogin);
         function.add(close);
         aboutUs.add(author);
         menuBar.add(function);
@@ -88,7 +83,6 @@ public class GameFrame extends JFrame implements KeyListener, ActionListener {
         // 添加监听器
         changePic.addActionListener(this);
         restart.addActionListener(this);
-        reLogin.addActionListener(this);
         close.addActionListener(this);
         author.addActionListener(this);
 
@@ -132,8 +126,13 @@ public class GameFrame extends JFrame implements KeyListener, ActionListener {
         }
         // 添加计步器
         JLabel stepLabel = new JLabel("Step: " + step);
-        stepLabel.setBounds(50, 30, 100, 20);
+        stepLabel.setBounds(50, 50, 100, 20);
         this.getContentPane().add(stepLabel);
+
+        // 添加说明
+        JLabel hintLabel = new JLabel("How to Play -> Press arrow keys to move, Press & hold A to show all images, W go to win.");
+        hintLabel.setBounds(20, 10, 600, 20);
+        this.getContentPane().add(hintLabel);
 
 
         // 图层添加顺序：先添加的图层在上层，后添加的图层在下层。
@@ -165,8 +164,14 @@ public class GameFrame extends JFrame implements KeyListener, ActionListener {
         this.getContentPane().removeAll();
         // 添加计步器
         JLabel stepLabel = new JLabel("Step: " + step);
-        stepLabel.setBounds(50, 30, 100, 20);
+        stepLabel.setBounds(50, 50, 100, 20);
         this.getContentPane().add(stepLabel);
+
+        // 添加说明
+        JLabel hintLabel = new JLabel("How to Play -> Press arrow keys to move, Press & hold A to show all images, W go to win.");
+        hintLabel.setBounds(20, 10, 600, 20);
+        this.getContentPane().add(hintLabel);
+
         // 将完整的图片放置在JFrame中覆盖现有的图片。
         JLabel completeImageLabel = new JLabel(new ImageIcon(imagePath + "all.jpg"));
         completeImageLabel.setBounds(83,134,420,420);
@@ -199,6 +204,9 @@ public class GameFrame extends JFrame implements KeyListener, ActionListener {
 
     @Override
     public void keyPressed(KeyEvent e) { // 通过这个监听事件来实现按下按键时显示完整的图片。
+        if (isWin()) { // 如果已经胜利，则不允许进行任何操作，直接return出去
+            return;
+        }
         // 按下A键时，显示完整的图片
         int code = e.getKeyCode();
         if (code == 65 || code == 97) { // 65是A的ASCII码，97是a的ASCII码
@@ -276,7 +284,7 @@ public class GameFrame extends JFrame implements KeyListener, ActionListener {
                 initImage();
             break;
             default:
-                System.out.println("Invalid key pressed!\nPlease press A key to show all images!\nPress W to get answer!");
+                System.out.println("Invalid key pressed!");
             break;
         }
     }
@@ -285,15 +293,16 @@ public class GameFrame extends JFrame implements KeyListener, ActionListener {
     public void actionPerformed(ActionEvent e) {
         Object source = e.getSource();
         if (source == changePic) { // 询问用户更换到第几组图片 1-6
-            String[] options = {"1", "2", "3", "4", "5", "6"};
+            String[] options = {"animal1", "animal2", "animal3", "animal4", "animal5", "animal6",
+                    "sport1", "sport2", "sport3", "sport4", "sport5", "sport6","sport7", "sport8", "sport9", "sport10"};
             JComboBox<String> comboBox = new JComboBox<>(options);
 
             int result = JOptionPane.showConfirmDialog(this, comboBox,
                     "Please choose a picture group:", JOptionPane.OK_CANCEL_OPTION);
 
             if (result == JOptionPane.OK_OPTION) {
-                int selected = comboBox.getSelectedIndex();
-                imagePath = "src/main/resources/puzzleGame/animal/animal" + (selected + 1) + "/";
+                String selected = comboBox.getSelectedItem().toString();
+                imagePath = "src/main/resources/puzzleGame/gameImage/" + selected + "/";
                 // Reset steps and reinitialize
                 step = 0;
                 initData();
@@ -303,9 +312,6 @@ public class GameFrame extends JFrame implements KeyListener, ActionListener {
             step = 0;
             initData();
             initImage();
-        } else if (source == reLogin) {
-            new LoginFrame();
-            this.setVisible(false);
         } else if (source == close) {
             System.exit(0);
         } else if (source == author) {
