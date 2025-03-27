@@ -7,7 +7,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class d_Collections {
+public class e_Collections {
     public static void main(String[] args) {
         List<Integer> demoList = new ArrayList<>(Arrays.asList(243,123,456,789,234,567,890, 234,567,890));
         // 打乱顺序

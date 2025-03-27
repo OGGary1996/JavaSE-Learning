@@ -1,6 +1,6 @@
 package training.tutorialAdvanced.c_collections;
 
-public class c_VarArgs {
+public class d_VarArgs {
     public static void main(String[] args) {
         // 可变参数的底层实际上是数组，但是使用更灵活
         int result = sum(1,2,3,4,5,6,7,8,9);
