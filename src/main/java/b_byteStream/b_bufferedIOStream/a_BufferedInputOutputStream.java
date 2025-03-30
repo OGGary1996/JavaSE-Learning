@@ -1,10 +1,10 @@
-package c_byteStream;
+package b_byteStream.b_bufferedIOStream;
 
 // 本例子通过BufferedInputStream和BufferedOutputStream演示如何更加高效地读取和写入二进制文件
 
 import java.io.*;
 
-public class b_BufferedInputOutputStream {
+public class a_BufferedInputOutputStream {
     public static void main(String[] args) {
         // 创建需要被写入的文件对象,本例子采用.bin文件格式，这种格式是二进制文件格式，可以存储任何数据
         File file5 = new File("src/main/resources/file_examples/file5.bin");
@@ -27,7 +27,7 @@ public class b_BufferedInputOutputStream {
         try{
             // 1. 创建BufferedOutputStream对象,创建这个对象必须使用try-catch块或者throws IOException
             BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream("src/main/resources/file_examples/file5.bin"));
-            // 2. 使用write()方法写入文件,这个方法可以传递单个int参数，或者byte Array；这里写入的是ASCII码
+            // 2. 使用write()方法写入文件,write()方法接收byte[]数组作为参数
             String data = "BufferedOutputStream is more efficient than FileOutputStream";
             bos.write(data.getBytes());
             bos.flush(); // 刷新缓冲区

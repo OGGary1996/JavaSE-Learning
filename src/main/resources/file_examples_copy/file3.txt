@@ -1,0 +1,2 @@
+Buffered Writer is more efficient than FileWriter
+Just print a new line

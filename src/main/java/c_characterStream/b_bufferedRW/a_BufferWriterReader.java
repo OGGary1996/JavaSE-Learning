@@ -1,10 +1,10 @@
-package b_characterStream;
+package c_characterStream.b_bufferedRW;
 
 // 本例子演示如何使用BufferedWriter和BufferedReader更加高效地写入和读取文件
 
 import java.io.*;
 
-public class b_BufferWriterReader {
+public class a_BufferWriterReader {
     public static void main(String[] args) {
         // 创建需要读写操作的文件
         File file3 = new File("src/main/resources/file_examples/file3.txt");
