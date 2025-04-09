@@ -30,7 +30,7 @@ public class a_FileInputOutputStream {
         try(
             FileOutputStream fos = new FileOutputStream(file4)
         ){
-            fos.write("Hello, world!".getBytes());
+            fos.write("嘿嘿嘿".getBytes());
             System.out.println("File write successfully!");
         }catch (IOException e) {
             e.printStackTrace();

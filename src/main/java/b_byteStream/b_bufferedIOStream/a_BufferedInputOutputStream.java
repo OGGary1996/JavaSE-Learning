@@ -7,50 +7,38 @@ import java.io.*;
 public class a_BufferedInputOutputStream {
     public static void main(String[] args) {
         // 创建需要被写入的文件对象,本例子采用.bin文件格式，这种格式是二进制文件格式，可以存储任何数据
-        File file5 = new File("src/main/resources/file_examples/file5.bin");
+        File file5 = new File("src/main/resources/file_examples/file5.txt");
         File parent = file5.getParentFile();
-        if(!parent.exists()){
+        if (!parent.exists()){
             parent.mkdirs();
         }
-        try{
-            if (file5.createNewFile()){
-                System.out.println("File created successfully -> " + file5.getAbsolutePath() + file5.getName());
-            }else{
-                System.out.println("File created failed, maybe it already exists -> " + file5.getAbsolutePath() + file5.getName());
+        try {
+            if (!file5.exists()){
+                file5.createNewFile();
             }
-        }catch(Exception e){
-            System.out.println("Something went wrong -> ");
+        }catch(IOException e){
             e.printStackTrace();
         }
 
         // 通过BufferedOutputStream写入文件
-        try{
-            // 1. 创建BufferedOutputStream对象,创建这个对象必须使用try-catch块或者throws IOException
-            BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream("src/main/resources/file_examples/file5.bin"));
-            // 2. 使用write()方法写入文件,write()方法接收byte[]数组作为参数
-            String data = "BufferedOutputStream is more efficient than FileOutputStream";
-            bos.write(data.getBytes());
-            bos.flush(); // 刷新缓冲区
-            // 3. 关闭流
-            bos.close();
+        try(BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream(file5))){
+            bos.write("Hello, world!".getBytes());
         }catch(IOException e){
-            System.out.println("Something went wrong -> ");
             e.printStackTrace();
         }
 
-        // 通过BufferedInputStream读取文件
-        try{
-            // 1. 创建BufferedInputStream对象,创建这个对象必须使用try-catch块或者throws IOException
-            BufferedInputStream bis = new BufferedInputStream(new FileInputStream("src/main/resources/file_examples/file5.bin"));
-            // 2. 读取文件,使用read()方法读取文件，返回读取的字节的ASCII码，如果到达文件末尾返回-1
-            int data;
-            while((data = bis.read()) != -1){
-                System.out.println((char)data);
+        // 通过BufferedOutputStream写入文件
+        try (BufferedInputStream bis = new BufferedInputStream(new FileInputStream(file5))){
+            // 1.bis只是针对输入流的封装，真正底层的流还是是FileInputStream
+            byte[] data = new byte[1024]; // 共计1024个字节，1kb
+            int len;
+            while((len = bis.read(data)) != -1){
+                System.out.println(new String(data, 0, len));
             }
-            // 3. 关闭流
-        }catch(IOException e){
-            System.out.println("Something went wrong -> ");
+        }catch (IOException e){
             e.printStackTrace();
         }
+
+
     }
 }

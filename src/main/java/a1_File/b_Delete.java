@@ -1,4 +1,4 @@
-package a_file;
+package a1_File;
 
 // 本例子演示如何删除文件
 
@@ -11,7 +11,7 @@ public class b_Delete {
         if (file2.delete()){
             System.out.println("File deleted successfully from -> " + file2.getAbsolutePath());
         }else{
-            System.out.println("Failed to delete a_file, maybe it doesn't exist -> " + file2.getAbsolutePath());
+            System.out.println("Failed to delete a1_File, maybe it doesn't exist -> " + file2.getAbsolutePath());
         }
 
         // 删除目录

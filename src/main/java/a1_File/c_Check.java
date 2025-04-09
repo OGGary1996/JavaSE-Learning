@@ -1,4 +1,4 @@
-package a_file;
+package a1_File;
 
 // 本例子演示如何检查文件或目录是否存在,以及如何获取文件或目录的属性
 

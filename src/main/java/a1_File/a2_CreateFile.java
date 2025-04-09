@@ -1,4 +1,4 @@
-package a_file;
+package a1_File;
 
 // 本例子演示如何创建文件
 
@@ -17,7 +17,7 @@ public class a2_CreateFile {
             e.printStackTrace();
         }
         // 如果文件目录不存在的情况下, 会抛出异常
-//        File file2 = new File("non_existed/a_file.txt");
+//        File file2 = new File("non_existed/a1_File.txt");
 //        try{
 //            file2.createNewFile();
 //        }catch(IOException e){

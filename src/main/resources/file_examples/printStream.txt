@@ -1,0 +1,3 @@
+Hello from PrintStream!
+This is a test.
+Name: Ke, Age: 28

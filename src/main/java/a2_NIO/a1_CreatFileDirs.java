@@ -1,4 +1,4 @@
-package x_NIO;
+package a2_NIO;
 
 // 本例子采用NIO中的Files类中的静态方法来创建文件和目录
 
