@@ -17,27 +17,34 @@ public class d3_DeadLock {
         new Thread(simulation::task2,"Thread2").start();
 
         // 创建检测死锁的线程
-        Thread monitor = new Thread(() -> {
+        // 通过ManagementFactory中的静态方法获取到ThreadMXBean实例
+        Thread deadLockDetector = new Thread(() -> {
             ThreadMXBean threadMXBean = ManagementFactory.getThreadMXBean();
-            while(true){ // 持续监测
-                long[] deadLockThreads = threadMXBean.findDeadlockedThreads();
-                if (deadLockThreads != null){
-                    System.out.println("DeadLock Detected!");
-                    for (long deadLockThread : deadLockThreads){
-                        System.out.println("Thread in deadlock: " + threadMXBean.getThreadInfo(deadLockThread));
+            // 获取死锁线程ID,通过循环来进行获取
+            while(true){
+                // 创建long类型的数组，存醋死锁线程ID(long类型)
+                long[] deadlockedThreadIDs = threadMXBean.findDeadlockedThreads();
+                if (deadlockedThreadIDs != null){ // 非空且非null
+                    for( long deadlockedThreadID : deadlockedThreadIDs){
+                        // 获取死锁线程的名称
+                        String threadName = threadMXBean.getThreadInfo(deadlockedThreadID).getThreadName();
+                        System.out.println("Deadlock detected in thread: " + threadName);
                     }
-                    break;
                 }
-                try{
-                    Thread.sleep(5000); // 每间隔1秒检测一次
+                // 休眠5秒钟
+                try {
+                    Thread.sleep(5000);
                 } catch (InterruptedException e) {
-                    e.printStackTrace();
+                    throw new RuntimeException(e);
                 }
             }
         });
-        monitor.setDaemon(true);
-        monitor.start();
+        // 设置为守护线程并启动
+        deadLockDetector.setDaemon(true);
+        deadLockDetector.start();
+
     }
+
 
     // 创建线程的任务
     public void task1(){
