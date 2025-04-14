@@ -1,4 +1,4 @@
-package d_concurrentCollections;
+package c_threadCollaboration;
 
 import java.util.concurrent.CyclicBarrier;
 import java.util.concurrent.ExecutorService;
@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
 
 // 通过使用CyclicBarrier来模拟简单的3个线程之间的等待
 
-public class e1_CyclicBarrier {
+public class b1_CyclicBarrier {
     public static void main(String[] args) {
         // create a CyclicBarrier with 3 parties,means 3 threads will wait for each other
         CyclicBarrier barrier = new CyclicBarrier(3);

@@ -1,4 +1,4 @@
-package d_concurrentCollections;
+package d_threadSafetyCollections;
 
 // 本例通过在外部创建模拟类和runnable类，演示如何使用CopyOnWriteArray
     // 与c1的例子不同的是，读操作会打印整个数组，而不是单个元素；然后写操作会随机修改数组中的一个元素；接着读操作会再次打印整个修改后的数组
@@ -9,7 +9,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-public class c2_CopyOnWriteArray {
+public class d2_CopyOnWriteArray {
     public static void main(String[] args) {
         Simulation simulation = new Simulation();
         simulation.simulation();

@@ -1,4 +1,4 @@
-package d_concurrentCollections;
+package d_threadSafetyCollections;
 
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ExecutorService;
@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
 
 // 本例子展示了如何使用ConcurrentHashMap来实现多线程写入数据
 
-public class b1_ConcurrentHashMap {
+public class c1_ConcurrentHashMap {
     public static void main(String[] args) {
         // create a ConcurrentHashMap
         ConcurrentHashMap<Integer,String> map = new ConcurrentHashMap<>();

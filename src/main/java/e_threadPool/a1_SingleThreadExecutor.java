@@ -1,4 +1,4 @@
-package e_executorService;
+package e_threadPool;
 // 本例采用在main class外部单独创建runnable接口的方式
 
 import java.util.concurrent.ExecutorService;

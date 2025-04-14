@@ -1,4 +1,4 @@
-package c_synchronizedCollections;
+package d_threadSafetyCollections;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -9,8 +9,8 @@ public class a2_SynchronizedCollections {
     public static void main(String[] args) {
         /*
          *在使用Collections.synchronizedList()方法时，我们需要注意的是，
-         * 虽然这个方法可以确保线程安全，但是在迭代时，我们仍然需要手动保证线程安全。
-         * 就算在迭代时，我们使用了synchronized关键字，但是在迭代过程中，如果有其他线程对集合进行了修改，
+         * 虽然这个方法可以确保线程安全，但是在 迭代 时，我们仍然需要手动保证线程安全。
+         * 就算在迭代时，我们使用了synchronized关键字，但是在 迭代过程 中，如果有其他线程对集合进行了修改，
          * 可能 会抛出ConcurrentModificationException异常。
          */
 
@@ -23,7 +23,7 @@ public class a2_SynchronizedCollections {
 
         // 创建一个线程用于迭代
         Thread iteratorThread = new Thread(() -> {
-            synchronized (numsList) {
+            synchronized (numsList) { // 使用迭代器时需要手动上锁
                 for (Iterator<Integer> iterator = numsList.iterator(); iterator.hasNext(); ) {
                     System.out.println("Iterating: " + iterator.next());
                     try {

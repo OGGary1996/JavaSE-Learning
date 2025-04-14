@@ -1,4 +1,4 @@
-package c_synchronizedCollections;
+package d_threadSafetyCollections;
 
 import java.util.ArrayList;
 import java.util.Collections;

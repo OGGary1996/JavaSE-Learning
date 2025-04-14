@@ -1,10 +1,10 @@
-package d_concurrentCollections;
+package c_threadCollaboration;
 
 import java.util.concurrent.CountDownLatch;
 
 // 本案例演示如何使用CountDownLatch进行简单的3个线程的同步
 
-public class d1_CountDownLatch {
+public class a1_CountDownLatch {
     public static void main(String[] args) {
         // create a count latch
         CountDownLatch count = new CountDownLatch(3); // 3 is the count

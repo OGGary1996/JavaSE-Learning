@@ -1,4 +1,4 @@
-package d_concurrentCollections;
+package d_threadSafetyCollections;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,7 +9,7 @@ import java.util.concurrent.Future;
 
 // 本例子通过使用ConcurrentHashMap来实现多线程写入数据，并且使用Future来获取线程的返回值，通过get()方法来等待线程的执行结果
 
-public class b2_ConcurrentHashMap {
+public class c2_ConcurrentHashMap {
     public static void main(String[] args) {
         // create a ConcurrentHashMap
         ConcurrentHashMap<Integer,String> map = new ConcurrentHashMap<>();

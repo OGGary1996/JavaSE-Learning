@@ -1,10 +1,10 @@
-package d_concurrentCollections;
+package d_threadSafetyCollections;
 
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-public class c1_CopyOnWriteArray {
+public class d1_CopyOnWriteArray {
     public static void main(String[] args) {
         // create a CopyOnWriteArray
         CopyOnWriteArrayList<Integer> nums = new CopyOnWriteArrayList<>(new Integer[]{1, 3, 5, 7, 9});

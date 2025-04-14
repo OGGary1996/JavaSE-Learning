@@ -1,4 +1,4 @@
-package d_concurrentCollections;
+package c_threadCollaboration;
 
 /* 本例子使用Exchanger来实现两个线程之间的数据交换
  * 两个线程分别有一个字符串。
@@ -8,7 +8,7 @@ package d_concurrentCollections;
 
 import java.util.concurrent.*;
 
-public class f1_Exchanger {
+public class c1_Exchanger {
     public static void main(String[] args) {
         // create an Exchanger
         Exchanger<String> dataExchanger = new Exchanger<>();

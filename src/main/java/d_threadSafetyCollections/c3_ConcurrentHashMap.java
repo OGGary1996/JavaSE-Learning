@@ -1,4 +1,4 @@
-package d_concurrentCollections;
+package d_threadSafetyCollections;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,7 +6,7 @@ import java.util.concurrent.*;
 
 // 本例子通过使用ConcurrentHashMap来实现计数器，通过使用原子操作merge()方法来实现多线程安全的计数
 
-public class b3_ConcurrentHashMap {
+public class c3_ConcurrentHashMap {
     public static void main(String[] args) {
         // create a ConcurrentHashMap
         ConcurrentHashMap<String,Integer> counter = new ConcurrentHashMap<>();
