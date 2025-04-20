@@ -41,26 +41,27 @@ class User{
 }
 
 public class a_getClassObject {
-    public static void main(String[] args) {
-        try {
-            // 1. 通过Class.forName()创建Class对象
-            Class<?> class1 = Class.forName("Reflection.b_getClassObject.User");
-            // 2. 通过类名.class创建Class对象
-            Class<?> class2 = User.class;
-            // 3. 通过对象.getClass()创建Class对象
-            User user1 = new User();
-            Class<?> class3 = user1.getClass();
+    public static void main(String[] args) throws ClassNotFoundException {
+        // 方法一：通过Class类的精要方法获取
+            // 对应类加载的第一阶段，此时编译完成，生成了.class文件
+            // 此时并不知道类的具体类型，采用？泛型
+        Class<?> userClass1 = Class.forName("Reflection.b_getClassObject.User");
+        // 方法二：通过类名.class获取
+            // 对应类加载的第二阶段，此时.class文件被加载到方法区，生成了Class对象
+            // 此时知道类的具体类型，采用具体类型
+        Class<User> userClass2 = User.class;
+        // 方法三：通过对象的getClass()方法获取
+            // 对应类加载的第三阶段，此时类的实例化完成，生成了对象，直接通过对象的方法获取
+            // 此时知道类的具体类型，采用具体类型；但是，无法确定这个对象是User类还是他的子类，所以也需要使用泛型
+        User user = new User();
+        Class<? extends User> userClass3 = user.getClass();
 
-            // 通过对比Hashcode来确认他们是否相同的内存地址
-            if (class1.hashCode() == class2.hashCode() && class2.hashCode() == class3.hashCode()){
-                System.out.println("They are the same object");
-            } else {
-                System.out.println("They are not the same object");
-            }
-
-        } catch (ClassNotFoundException e) {
-            System.out.println("Class not found");
-            e.printStackTrace();
+        // 对比三个Class对象的hashcode
+        if (userClass1.hashCode() == userClass2.hashCode() &&
+                userClass1.hashCode() == userClass3.hashCode()) {
+            System.out.println("三个Class对象的hashcode相同，说明它们是同一个对象");
+        }else{
+            System.out.println("三个Class对象的hashcode不同，说明它们不是同一个对象");
         }
     }
 }

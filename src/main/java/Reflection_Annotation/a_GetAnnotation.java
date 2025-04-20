@@ -5,111 +5,110 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 import java.lang.reflect.Field;
+import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
+import java.lang.reflect.Modifier;
 
-// 本例子展示如何获取注解，包括类注解，字段注解，方法注解
-// 1. 创建自定义注解
+// 创建注解
+// 1. 创建CLass的注解
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
 @interface TableAnnotation{
-    String value() default "Student Table";
-    int version() default 0;
+    String description() default "Table";
+    int version();
 }
 
+// 2. 创建方法的注解
+@Target(ElementType.METHOD)
+@Retention(RetentionPolicy.RUNTIME)
+@interface AutoRun{
+    String value() default "AutoRun";
+}
+
+// 3. 创建字段的注解
 @Target(ElementType.FIELD)
 @Retention(RetentionPolicy.RUNTIME)
 @interface ColumnAnnotation{
-    String columnName();
-    String columnType();
-    int columnLength();
+    String name();
+    String type();
+    int length();
 }
 
-@Target(ElementType.METHOD)
-@Retention(RetentionPolicy.RUNTIME)
-@interface AutoRun {
-    String value() default "Method auto run";
-}
-
-// 2. 创建类，字段，方法注解
-@TableAnnotation(value = "Student Table Template", version = 1)
+//创建JavaBean
+@TableAnnotation(description = "Student Table",version = 1)
 class Student{
-    @ColumnAnnotation(columnName = "id",columnType = "int" , columnLength = 6)
-    private int id = 0;
-    @ColumnAnnotation(columnName = "name",columnType = "varchar" , columnLength = 20)
+    @ColumnAnnotation(name = "name",type = "String",length = 20)
     private String name;
-    @ColumnAnnotation(columnName = "age",columnType = "int" , columnLength = 2)
+    @ColumnAnnotation(name = "age",type = "int",length = 2)
     private int age;
-
-    public Student(){}
-
-    public Student(String name, int age){
+    @ColumnAnnotation(name = "id",type = "int",length = 10)
+    private static int id = 0;
+    private Student(){}
+    public Student(String name,int age){
         this.name = name;
         this.age = age;
     }
 
-    @AutoRun("Method auto run")
-    public void autoIncrement(){
+    @AutoRun
+    private void autoIncrement(){
         id++;
     }
 
-    public String print(){
-        System.out.println("Student-> id: " + id + ", name: " + name + ", age: " + age);
-        return null;
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", id=" + id +
+                '}';
     }
 }
 
 public class a_GetAnnotation {
-    public static void main(String[] args) throws Exception {
-        // 1.获取类的注解
-        Class<?> studentClass = Student.class;
-            // 1.1 检测注解是否存在
-        if (studentClass.isAnnotationPresent(TableAnnotation.class)){
+    public static void main(String[] args) throws ClassNotFoundException, InvocationTargetException, IllegalAccessException {
+        // 1. 获取类的注解
+        Class<?> stuClass = Class.forName("Reflection_Annotation.Student");
+            // 1.1 判断注解是否存在
+        if (stuClass.isAnnotationPresent(TableAnnotation.class)){
             // 1.2 获取注解
-            TableAnnotation table = studentClass.getAnnotation(TableAnnotation.class);
-            System.out.println("Table Name: " + table.value() + ", Table Version: " + table.version());
-        }else{
-            System.out.println("TableAnnotation not fund");
+            TableAnnotation tableAnnotation = stuClass.getAnnotation(TableAnnotation.class);
+            // 1.3 获取注解的属性值
+            System.out.println("TableAnnotation: " + tableAnnotation.description() + ", version: " + tableAnnotation.version());
         }
 
-        // 2.获取字段的注解
-            // 2.1 获取所有字段
-        Field[] fields = studentClass.getDeclaredFields();
-        for (Field field : fields){
-            field.setAccessible(true);
-            // 2.2 检查是否存在注解
-            if(field.isAnnotationPresent(ColumnAnnotation.class)){
-                // 2.3 获取并且打印信息
-                ColumnAnnotation column = field.getAnnotation(ColumnAnnotation.class);
-                System.out.println("Column Name: " + column.columnName() +
-                        ", Column Type: " + column.columnType() +
-                        ", Column Length: " + column.columnLength());
-            }else{
-                System.out.println("ColumnAnnotation not fund");
+        // 2. 获取字段的注解
+            // 2.1 获取所有的字段
+        Field[] declaredFields = stuClass.getDeclaredFields();
+            // 2.2 遍历所有的字段
+        for (Field f : declaredFields){
+            if (!Modifier.toString(f.getModifiers()).equals("public")){
+                f.setAccessible(true); // 设置私有属性可访问
+            }
+            // 2.3 判断字段是否有注解
+            if (f.isAnnotationPresent(ColumnAnnotation.class)){
+                ColumnAnnotation annotation = f.getAnnotation(ColumnAnnotation.class);
+                System.out.println("Field: " + f.getName() + ", name: " + annotation.name() + ", type: " + annotation.type() + ", length: " + annotation.length());
             }
         }
 
-        // 3.获取方法的注解
-            // 3.1 获取所有方法
-        Method[] methods = studentClass.getDeclaredMethods();
-        for (Method method : methods){
-            method.setAccessible(true);
-            // 3.2 检查是否存在注解
-            if(method.isAnnotationPresent(AutoRun.class)){
-                // 3.3 获取并且打印信息
-                AutoRun autoRun = method.getAnnotation(AutoRun.class);
-                System.out.println("Method Name: " + method.getName() + ", Method Description: " + autoRun.value());
-            }else{
-                System.out.println("Method Name: " + method.getName() + "@AutoRun not fund");
+        // 3. 根据方法的注解来执行方法
+        // 例如：在创建对象时，自动执行@AutoRun注解的方法
+            // 3.1 首先创建对象
+        Student stu = new Student("Kevin", 20);
+            // 3.2 创建对象之后，此时需要自动执行@AutoRun注解的方法
+            // 获取所有的方法
+        Method[] allMethods = stu.getClass().getDeclaredMethods();
+            // 遍历所有的方法
+        for (Method m : allMethods){
+            if (!Modifier.toString(m.getModifiers()).equals("public")){
+                m.setAccessible(true);
+            }
+            if (m.isAnnotationPresent(AutoRun.class)){
+                m.invoke(stu); // 执行方法
             }
         }
 
-        // 4 通过解析注解，执行方法
-        Object student1 = studentClass.getDeclaredConstructor(String.class,int.class).newInstance("Ke",20);
-        Method method1 = studentClass.getDeclaredMethod("autoIncrement");
-        if (method1.isAnnotationPresent(AutoRun.class)){
-            method1.invoke(student1);
-        }
-        studentClass.getDeclaredMethod("print").invoke(student1);
-
+            // 3.3 验证结果
+        System.out.println(stu.toString());
     }
 }
