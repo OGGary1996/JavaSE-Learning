@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/B-DataStructureAlgorithem/pom.xml" />
+        <option value="$PROJECT_DIR$/C-GUI-Exercise/pom.xml" />
+        <option value="$PROJECT_DIR$/D-Java-IO/pom.xml" />
+        <option value="$PROJECT_DIR$/E-Java-thread/pom.xml" />
+        <option value="$PROJECT_DIR$/F-java-network-programming/pom.xml" />
+        <option value="$PROJECT_DIR$/G-Java-Annotation-Reflection/pom.xml" />
+        <option value="$PROJECT_DIR$/A-java-basics/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="jdk-21" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/classes" />
+  </component>
+</project>

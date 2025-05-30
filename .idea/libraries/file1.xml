@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="file1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/D-Java-IO/src/main/resources/file1.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
