@@ -22,7 +22,7 @@ class Restaurant{
             // 判断是否达到最大dish数量
             while(dish >= MAX_DISH){ //如果达到上限，则notFull这个状况需要进入等待
                 System.out.println("Reached Maximum Dish, Waiting for Consumption...");
-                notFull.signal();
+                notFull.await();
             }
             // 如果此时还没达到最大dish数量，则进行生产操作，并且通知notEmpty状态准备唤醒
             Thread.sleep(1000);// 模拟生产时间,1秒
